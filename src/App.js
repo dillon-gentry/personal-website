@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-// import NavBar from './components/navbar';
 import Splash from './components/splash';
 import About from './components/about';
 import Projects from './components/projects';
