@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import Footer from './footer';
 
 class NavBar extends Component {
     state = {
@@ -68,8 +67,8 @@ class NavBar extends Component {
         document.getElementById('foot').style.width = "100vw";
         document.getElementById('page').style.marginLeft = "-20vw";
         document.getElementById('page').style.width = "100vw";
-        //document.getElementById('content').style.marginLeft = "13vw"; //works for about page
-        document.getElementById('content').style.marginLeft = "20vw"; //works for resume page
+        document.getElementById('content').style.marginLeft = "13vw"; //works for about page
+        //document.getElementById('content').style.marginLeft = "20vw"; //works for resume page
       }else{
         chevron = 'left';
         navBarCSS.width = "18vw";
@@ -78,8 +77,8 @@ class NavBar extends Component {
         document.getElementById('foot').style.width = "82vw";
         document.getElementById('page').style.marginLeft = "0vw";
         document.getElementById('page').style.width = "80vw";
-        //document.getElementById('content').style.marginLeft = "3vw"; //works for about page
-        document.getElementById('content').style.marginLeft = "10vw"; //works for resume page
+        document.getElementById('content').style.marginLeft = "3vw"; //works for about page
+        //document.getElementById('content').style.marginLeft = "10vw"; //works for resume page
       }
       this.navStyle = navBarCSS;
       this.toggleDivStyle = toggleDivCSS;

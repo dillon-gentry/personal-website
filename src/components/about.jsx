@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import NavBar from './navbar';
-//import Footer from './footer';
 
 class About extends Component {
     state = {  }
@@ -84,33 +83,6 @@ class About extends Component {
                                 </div>
                         </div>
                         </div>
-                        {/* <div className="row">
-                            <h1 style= { this.titleStyle }>About</h1>
-                            <div className="row" style = { this.textBubbleStyle }>
-                                <div className="col" style={this.textColStyle}>
-                                <div className="box tri">I have always been fascinated by 
-                                    technology and automation, and I am excited to live in a time period 
-                                    where technology is constantly evolving to further provide for humanity. Interests include
-                                    full stack development, software consulting, and API development.</div>
-                                </div>
-                                <div className="col">
-                                <div className="box tri" style={this.textColStyle}>
-                                    Studying Electrical and Computer Engineering with a focus on Software 
-                                    Engineering and Design at UT Austin. Experiences include working as a business analyst in IT as well as 
-                                    coursework utilizing Python, JavaScript, Java, and C/C++ programming 
-                                    languages.
-                                </div>
-                                </div>
-                            </div>
-                            <div className="row" style = { this.imgRowStyle }>
-                                <div className="col">
-                                    <img src="/img/hikingFormatted.png" alt="hiking pic"></img>
-                                </div>
-                                <div className="col">
-                                    <img src="/img/headshotFormatted.jpg" alt="headshot"></img>
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
 
                     {/* Footer starts here */}
