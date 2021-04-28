@@ -8,9 +8,10 @@ class GolfProj extends Component{
         textAlign: "center"
     }
 
-    contentDivStyle = {
+    pageDivStyle = {
         marginLeft: "0vw",
-        width: "80vw"
+        width: "80vw",
+        textAlign: "center"
     }
 
     footerStyle= {
@@ -23,6 +24,11 @@ class GolfProj extends Component{
         background:"#999"
     }
 
+    togglePopup = () => {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+    }
+
 
     render(){
         return(
@@ -33,10 +39,40 @@ class GolfProj extends Component{
                     <NavBar/>
 
                     {/* Page content */}
-                    <div style= {this.aboutDivStyle } className="col" id="page">
+                    <div style= {this.pageDivStyle } className="col" id="page">
                         <h1 style= { this.titleStyle }>Golf Guru IDB</h1>
                         <div id="content" style={this.contentDivStyle}>
-                        
+                            <div className="row" style = {{ marginLeft: "18vw", marginTop: "3vh"}}>
+                                <img src="/gif/golf_demo.gif" alt="loading..." style={{width: "40vw"}} />
+                            </div>
+                            <div className="row" style = {{ marginLeft: "18vw", marginTop: "3vh", width: "40vw"}}>
+                                <div className="card-deck">
+                                <div className="card" style={{height: "22vh"}}>
+                                        <div className="card-body">
+                                            <h4 className="card-title">Link</h4>
+                                            <p className="card-text">Click below for the finalized version of the website.</p>
+                                            <a href="http://golf-idb.uc.r.appspot.com" class="btn btn-primary">Go</a>
+                                        </div>
+                                </div>
+                                <div className="card" style={{height: "22vh"}}>
+                                        <div className="card-body">
+                                            <h4 className="card-title">Golf Guru IDB</h4>
+                                            <p className="card-text">Some example text.</p>
+                                            <div class="popup" onClick={ () => this.togglePopup() }>
+                                            <a className="btn btn-primary">More Info</a>
+                                                <span class="popuptext" id="myPopup">Popup text</span>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div className="card" style={{height: "22vh"}}>
+                                        <div className="card-body">
+                                            <h4 className="card-title">Tools</h4>
+                                            <p className="card-text">Flask, Bootstrap 4, Javascript, HTML/CSS, MongoDB, Google Cloud Platform</p>
+                                            <p className="card-text"></p>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
