@@ -8,6 +8,11 @@ class GolfProj extends Component{
         textAlign: "center"
     }
 
+    contentDivStyle = {
+        marginLeft: "0vw",
+        width: "80vw"
+    }
+
     footerStyle= {
         zIndex: "0",
         position: "absolute",
@@ -30,7 +35,7 @@ class GolfProj extends Component{
                     {/* Page content */}
                     <div style= {this.aboutDivStyle } className="col" id="page">
                         <h1 style= { this.titleStyle }>Golf Guru IDB</h1>
-                        <div id="content" style={{marginLeft: "3vw"}}>
+                        <div id="content" style={this.contentDivStyle}>
                         
                         </div>
                     </div>

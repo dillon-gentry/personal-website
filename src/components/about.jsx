@@ -12,8 +12,6 @@ class About extends Component {
 
     aboutDivStyle = {
         marginLeft: "0vw",
-        // marginTop: "-80vh",
-        // alignSelf: "center",
         width: "80vw"
     }
 
@@ -28,11 +26,11 @@ class About extends Component {
         marginLeft: "-14vh"
     }
 
-    textBubbleStyle = {
+    contentRowStyle = {
         width: "60vw",
         marginTop: "4vh",
         marginBottom: "5vh",
-        marginLeft: "9vw"
+        marginLeft: "0vw"
     }
 
     textColStyle = {
@@ -62,26 +60,64 @@ class About extends Component {
                     <div style= {this.aboutDivStyle } className="col" id="page">
                         <h1 style= { this.titleStyle }>About</h1>
                         <div id="content" style={{marginLeft: "3vw"}}>
-                        <div className="row" style = { this.textBubbleStyle }>
-                                <div className="col">
-                                    <div className="box tri">I have always been fascinated by 
-                                        technology and automation, and I am excited to live in a time period 
-                                        where technology is constantly evolving to further provide for humanity. Interests include
-                                        full stack development, software consulting, and API development.
+                            <div className="row" style = { this.contentRowStyle }>
+                                    <div className="card-deck" style={{marginLeft: "18vw"}}>
+                                        {/* <div className="card"> */}
+                                        <div class="flip-card card">
+                                            <div class="flip-card-inner">
+                                                <div class="flip-card-front">
+                                                <img src="/img/hikingFormatted.png" alt="hiking" style={{width: "300px", height: "300px"}}/>
+                                                </div>
+                                                <div class="flip-card-back">
+                                                <p></p>
+                                                <p>I have always been fascinated by 
+                                                    technology and automation, and I am excited to live in a time period 
+                                                    where technology is constantly evolving to further provide for humanity.</p>
+                                                <p>Interests include
+                                                    full stack development, app development, and automation.</p>    
+                                                </div>
+                                            </div>
+                                        {/* </div> */}
+                                        </div>
+                                        
+                                        {/* <div className="card"> */}
+                                        <div class="flip-card card">
+                                            <div class="flip-card-inner">
+                                                <div class="flip-card-front">
+                                                <img src="/img/headshotFormatted.jpg" alt="headshot" style={{width: "300px", height: "300px"}}/>
+                                                </div>
+                                                <div class="flip-card-back">
+                                                <p></p>    
+                                                <p>Studying Electrical and Computer Engineering with a focus on Software 
+                                                Engineering and Design at UT Austin.</p> 
+                                                <p>Experiences include working as a Business Analyst in IT at Phillips 66 HQ as well as 
+                                                coursework utilizing Python, JavaScript, Java, Verilog, and C/C++ programming 
+                                                languages.</p>
+                                                </div>
+                                            </div>
+                                        {/* </div> */}
+                                        </div>
+                                        
                                     </div>
-                                    <img src="/img/hikingFormatted.png" alt="hiking pic" style={this.imgNStyle}></img>
-                                </div>
-                                
-                                <div className="col">
-                                    <div className="box tri">
-                                        Studying Electrical and Computer Engineering with a focus on Software 
-                                        Engineering and Design at UT Austin. Experiences include working as a business analyst in IT as well as 
-                                        coursework utilizing Python, JavaScript, Java, and C/C++ programming 
-                                        languages.
+                                    {/* <div className="col">
+                                        <div className="box tri">I have always been fascinated by 
+                                            technology and automation, and I am excited to live in a time period 
+                                            where technology is constantly evolving to further provide for humanity. Interests include
+                                            full stack development, software consulting, and API development.
+                                        </div>
+                                        <img src="/img/hikingFormatted.png" alt="hiking pic" style={this.imgNStyle}></img>
                                     </div>
-                                    <img src="/img/headshotFormatted.jpg" alt="headshot" style={this.imgHStyle}></img>
-                                </div>
-                        </div>
+                                    
+                                    <div className="col">
+                                        <div className="box tri">
+                                            Studying Electrical and Computer Engineering with a focus on Software 
+                                            Engineering and Design at UT Austin. Experiences include working as a business analyst in IT as well as 
+                                            coursework utilizing Python, JavaScript, Java, and C/C++ programming 
+                                            languages.
+                                        </div>
+                                        <img src="/img/headshotFormatted.jpg" alt="headshot" style={this.imgHStyle}></img>
+                                    </div> */}
+                            </div>
                         </div>
                     </div>
 
