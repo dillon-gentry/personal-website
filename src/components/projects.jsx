@@ -60,7 +60,8 @@ class Projects extends Component {
                                         {/* <img className="card-img-top" src="img_avatar1.png" alt="Card image"/> */}
                                         <div className="card-body">
                                             <h4 className="card-title">Golf Guru IDB</h4>
-                                            <p className="card-text">Some example text.</p>
+                                            <p className="card-text">Tools</p>
+                                            <p className="card-text">Flask, Bootstrap 4, JavaScript, HTML/CSS, MongoDB, Google Cloud Platform</p>
                                             <a href="/projects/golf-guru" class="btn btn-primary">Learn More</a>
                                         </div>
                                     </div>
@@ -70,8 +71,9 @@ class Projects extends Component {
                                     <div className="card" style={{marginTop: "22vh", height: "22vh"}}>
                                         {/* <img className="card-img-top" src="img_avatar1.png" alt="Card image"/> */}
                                         <div className="card-body">
-                                            <h4 className="card-title">NOKIA Automatic Time Series Forecasting</h4>
-                                            <p className="card-text">Some example text.</p>
+                                            <h4 className="card-title">Nokia Auto-Forecasting</h4>
+                                            <p className="card-text">Tools</p>
+                                            <p className="card-text">ReactJS, ChartJS, Axios, Flask, JavaScript, HTML/CSS, MongoDB</p>
                                             <a href="/projects/nokia-tsf" class="btn btn-primary">Learn More</a>
                                         </div>
                                     </div>
@@ -82,7 +84,9 @@ class Projects extends Component {
                                         {/* <img className="card-img-top" src="img_avatar1.png" alt="Card image"/> */}
                                         <div className="card-body">
                                             <h4 className="card-title">Auction House</h4>
-                                            <p className="card-text">Some example text.</p>
+                                            <p className="card-text">Tools</p>
+                                            <p className="card-text">Using Java socket programming, the auction house operates as a server accepting multiple clients
+                                                    who wish to compete and place bids on items. The client GUI was developed using JavaFx.</p>
                                             <a href="/projects/auction-house" class="btn btn-primary">Learn More</a>
                                         </div>
                                     </div>

@@ -56,18 +56,19 @@ class GolfProj extends Component{
                                 </div>
                                 <div className="card" style={{height: "22vh"}}>
                                         <div className="card-body">
-                                            <h4 className="card-title">Golf Guru IDB</h4>
-                                            <p className="card-text">Some example text.</p>
+                                            <h4 className="card-title">Information</h4>
+                                            <p className="card-text">Full stack internet database project performed in Agile sprints.</p>
                                             <div class="popup" onClick={ () => this.togglePopup() }>
                                             <a className="btn btn-primary">More Info</a>
-                                                <span class="popuptext" id="myPopup">Popup text</span>
+                                                <span class="popuptext" id="myPopup">Golf Guru is a full stack internet database project that manages hundreds of data entries within
+                                                    a MongoDB cluster and displays this data to the user through a Flask application.</span>
                                             </div>
                                         </div>
                                 </div>
                                 <div className="card" style={{height: "22vh"}}>
                                         <div className="card-body">
                                             <h4 className="card-title">Tools</h4>
-                                            <p className="card-text">Flask, Bootstrap 4, Javascript, HTML/CSS, MongoDB, Google Cloud Platform</p>
+                                            <p className="card-text">Flask, Bootstrap 4, JavaScript, HTML/CSS, MongoDB, Google Cloud Platform</p>
                                             <p className="card-text"></p>
                                         </div>
                                 </div>
