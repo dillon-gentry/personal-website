@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 
 class NavBar extends Component {
     state = {
-      chevron: "left"
+      chevron: "right"
     };
 
     navStyle = {
+      zIndex: "2",
       height: "100vh",
-      width: "18vw",
+      width: "0vw",
       position: "fixed",
-      backgroundColor: "rgb(34, 139, 34)",
+      backgroundColor: "rgb(0, 51, 25)",
       overflowX: "hidden"
     }
 
@@ -38,6 +39,7 @@ class NavBar extends Component {
     }
 
     toggleStyle = {
+      paddingLeft: "2vw",
       paddingTop: "45vh",
       textDecoration: "none",
       fontSize: "50px",
@@ -46,12 +48,12 @@ class NavBar extends Component {
     }
 
     toggleDivStyle={
-      zIndex: "1",
+      zIndex: "3",
       position: "fixed",
-      marginLeft: "18vw",
+      marginLeft: "0",
       height: "100vh",
-      width: "2vw",
-      backgroundColor: "rgb(24, 37, 223)"
+      width: "4vw",
+      backgroundColor: "rgb(0, 0, 153)"
     }
 
     toggleNav = () => {
@@ -59,27 +61,33 @@ class NavBar extends Component {
       let chevron = '';
       let navBarCSS = {...this.navStyle};
       let toggleDivCSS = {...this.toggleDivStyle};
+      let toggleCSS = {...this.toggleStyle};
       if(dir === 'left'){
         chevron = 'right';
         navBarCSS.width = "0";
-        toggleDivCSS.marginLeft = "1.5vw";
-        document.getElementById('foot').style.left = "0vw";
-        document.getElementById('foot').style.width = "100vw";
-        document.getElementById('page').style.marginLeft = "-20vw";
-        document.getElementById('page').style.width = "100vw";
-        document.getElementById('content').style.marginLeft = "13vw"; //works for about page
+        toggleDivCSS.marginLeft = "0vw";
+        toggleDivCSS.width = "4vw";
+        toggleCSS.paddingLeft = "2vw";
+        // document.getElementById('foot').style.left = "0vw";
+        // document.getElementById('foot').style.width = "100vw";
+        // document.getElementById('page').style.marginLeft = "-20vw";
+        // document.getElementById('page').style.width = "100vw";
+        // document.getElementById('content').style.marginLeft = "13vw"; //works for about page
         //document.getElementById('content').style.marginLeft = "20vw"; //works for resume page
       }else{
         chevron = 'left';
         navBarCSS.width = "18vw";
         toggleDivCSS.marginLeft = "18vw";
-        document.getElementById('foot').style.left = "18vw";
-        document.getElementById('foot').style.width = "82vw";
-        document.getElementById('page').style.marginLeft = "0vw";
-        document.getElementById('page').style.width = "80vw";
-        document.getElementById('content').style.marginLeft = "3vw"; //works for about page
+        toggleDivCSS.width = "3vw";
+        toggleCSS.paddingLeft = "0.5vw";
+        // document.getElementById('foot').style.left = "18vw";
+        // document.getElementById('foot').style.width = "82vw";
+        // document.getElementById('page').style.marginLeft = "0vw";
+        // document.getElementById('page').style.width = "80vw";
+        // document.getElementById('content').style.marginLeft = "3vw"; //works for about page
         //document.getElementById('content').style.marginLeft = "10vw"; //works for resume page
       }
+      this.toggleStyle = toggleCSS;
       this.navStyle = navBarCSS;
       this.toggleDivStyle = toggleDivCSS;
       this.setState({chevron});

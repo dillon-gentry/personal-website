@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from './navbar';
+import Footer from './footer';
 
 class GolfProj extends Component{
 
@@ -8,20 +9,24 @@ class GolfProj extends Component{
         textAlign: "center"
     }
 
-    pageDivStyle = {
-        marginLeft: "0vw",
-        width: "80vw",
-        textAlign: "center"
+    bgStyle = {
+        backgroundImage: "url('/img/splash_bg.png')",
+        backgroundSize: "cover",
+        overflow: "hidden",
+        height: "100vh",
+        widht: "100vw"
     }
 
-    footerStyle= {
-        zIndex: "0",
-        position: "absolute",
-        left: "18vw",
-        bottom: "0vh",
-        height:"10vh",
-        width:"82vw",
-        background:"#999"
+    pageDivStyle = {
+        marginLeft: "0vw",
+        width: "100vw",
+        textAlign: "center",
+        position: "absolute"
+    }
+
+    contentDivStyle = {
+        position: "relative",
+        left: "11%"
     }
 
     togglePopup = () => {
@@ -33,6 +38,7 @@ class GolfProj extends Component{
     render(){
         return(
             <React.Fragment>
+                <div style={this.bgStyle}>
                 <div className="row" style= {{width: "100vw"}}>
                     
                     {/* Navbar element first */}
@@ -43,7 +49,12 @@ class GolfProj extends Component{
                         <h1 style= { this.titleStyle }>Golf Guru IDB</h1>
                         <div id="content" style={this.contentDivStyle}>
                             <div className="row" style = {{ marginLeft: "18vw", marginTop: "3vh"}}>
-                                <img src="/gif/golf_demo.gif" alt="loading..." style={{width: "40vw"}} />
+                            <div class="card" style={{width: "40vw"}}>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Demo</h4>
+                                    </div>
+                                    <img class="card-img-bottom" src="/gif/golf_demo.gif" alt="loading..." style={{marginLeft: "1vw", width: "38vw"}}></img>
+                                </div>
                             </div>
                             <div className="row" style = {{ marginLeft: "18vw", marginTop: "3vh", width: "40vw"}}>
                                 <div className="card-deck">
@@ -77,32 +88,9 @@ class GolfProj extends Component{
                         </div>
                     </div>
 
-                    {/* Footer starts here */}
-                    <footer style={this.footerStyle} id="foot">
-                        <div className="row" style={{ marginLeft: "10vw", marginTop: "2vh", marginRight: "6vw" }}>
-                            <div className="col-3" style={{marginRight: "2vw", paddingTop: "1vh"}}>
-                                <h4>Last updated: 4/18/2021</h4>
-                            </div>
-                            <div className="col-5" style={{marginRight: "2vw", paddingTop: "1.5vh"}}>
-                                <h6>Made with React.js, HTML, CSS, Bootstrap 4, and FontAwesome.</h6>
-                            </div>
-                            <div className="col-2">
-                                <div className="row">
-                                    <div style={{paddingRight: "2vw"}}>
-                                        <a href="mailto: djg81999@gmail.com" style={{ textDecoration: "none", color: "blue", display: "block", padding: "1px"}}>
-                                            <i class="fas fa-envelope-square" style={{fontSize: "3rem", marginBottom: "1vh" }}></i>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="https://www.linkedin.com/in/dillon-gentry-768b411a0/" style={{ textDecoration: "none", color: "blue", display: "block", padding: "1px"}}>
-                                            <i class="fab fa-linkedin" style={{fontSize: "3rem", marginBottom: "1vh"}}></i>
-                                        </a>
-                                    </div>  
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
+                    <Footer/>
 
+                </div>
                 </div>
             </React.Fragment>
         );
