@@ -8,11 +8,14 @@ import NokiaProj from './components/nokiaproj';
 import GolfProj from './components/golfproj';
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import Navbar from './components/navbar';
+import Footer from './components/footer';
 
 class App extends Component{
   render(){ 
     return(
     <React.Fragment>
+      <Navbar/>
       <Switch>
         <Route path="/projects/auction-house" component={AuctionProj}/>
         <Route path="/projects/nokia-tsf" component={NokiaProj}/>
@@ -22,6 +25,7 @@ class App extends Component{
         <Route path="/about" component={About}/>
         <Route path="/" component={Splash}/>
       </Switch>
+      <Footer/>
     </React.Fragment>
     );
     }

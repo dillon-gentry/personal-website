@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import headshot from './img/splash_headshot.jpg';
 // import background from './img/splash_bg.jpg';
 //Note: wallpaper came from https://wallpaperaccess.com/mountain-forest
+import Footer from './footer';
 
 class Splash extends Component {
     state = {  }
@@ -44,6 +45,7 @@ class Splash extends Component {
 
     render() { 
         return (
+          <React.Fragment>
           <div
             style={this.divStyle}
             className="jumbotron jumbotron-fluid vertical-center"
@@ -58,12 +60,14 @@ class Splash extends Component {
             <h2 style={this.textStyle}>
               I study software engineering and design.
             </h2>
-            <div style={this.bttnParentStyle}>
+            {/* <div style={this.bttnParentStyle}>
                 <a href="/about">
                     <button style={this.bttnStyle}>Learn More</button>
                 </a>
-            </div>
+            </div> */}
           </div>
+          <Footer/>
+          </React.Fragment>
         );
     }
 }

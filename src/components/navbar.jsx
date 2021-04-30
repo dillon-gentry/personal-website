@@ -68,24 +68,12 @@ class NavBar extends Component {
         toggleDivCSS.marginLeft = "0vw";
         toggleDivCSS.width = "4vw";
         toggleCSS.paddingLeft = "2vw";
-        // document.getElementById('foot').style.left = "0vw";
-        // document.getElementById('foot').style.width = "100vw";
-        // document.getElementById('page').style.marginLeft = "-20vw";
-        // document.getElementById('page').style.width = "100vw";
-        // document.getElementById('content').style.marginLeft = "13vw"; //works for about page
-        //document.getElementById('content').style.marginLeft = "20vw"; //works for resume page
       }else{
         chevron = 'left';
         navBarCSS.width = "18vw";
         toggleDivCSS.marginLeft = "18vw";
         toggleDivCSS.width = "3vw";
         toggleCSS.paddingLeft = "0.5vw";
-        // document.getElementById('foot').style.left = "18vw";
-        // document.getElementById('foot').style.width = "82vw";
-        // document.getElementById('page').style.marginLeft = "0vw";
-        // document.getElementById('page').style.width = "80vw";
-        // document.getElementById('content').style.marginLeft = "3vw"; //works for about page
-        //document.getElementById('content').style.marginLeft = "10vw"; //works for resume page
       }
       this.toggleStyle = toggleCSS;
       this.navStyle = navBarCSS;

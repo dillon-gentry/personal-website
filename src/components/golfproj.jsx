@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import NavBar from './navbar';
-import Footer from './footer';
 
 class GolfProj extends Component{
 
@@ -21,12 +19,15 @@ class GolfProj extends Component{
         marginLeft: "0vw",
         width: "100vw",
         textAlign: "center",
-        position: "absolute"
+        position: "absolute",
+        height: "90vh",
+        overflowY: "scroll",
+        overflowX: "hidden"
     }
 
     contentDivStyle = {
         position: "relative",
-        left: "11%"
+        left: "12%"
     }
 
     togglePopup = () => {
@@ -40,9 +41,6 @@ class GolfProj extends Component{
             <React.Fragment>
                 <div style={this.bgStyle}>
                 <div className="row" style= {{width: "100vw"}}>
-                    
-                    {/* Navbar element first */}
-                    <NavBar/>
 
                     {/* Page content */}
                     <div style= {this.pageDivStyle } className="col" id="page">
@@ -87,8 +85,6 @@ class GolfProj extends Component{
                             </div>
                         </div>
                     </div>
-
-                    <Footer/>
 
                 </div>
                 </div>

@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import NavBar from './navbar';
-import Footer from './footer';
 
 class NokiaProj extends Component{
 
@@ -21,12 +19,15 @@ class NokiaProj extends Component{
         marginLeft: "0vw",
         width: "100vw",
         textAlign: "center",
-        position: "absolute"
+        position: "absolute",
+        height: "90vh",
+        overflowY: "scroll",
+        overflowX: "hidden"
     }
 
     contentDivStyle = {
         position: "relative",
-        left: "11%"
+        left: "12%"
     }
 
     togglePopup1 = () => {
@@ -45,12 +46,9 @@ class NokiaProj extends Component{
             <React.Fragment>
                 <div style={this.bgStyle}>
                     <div className="row" style= {{width: "100vw"}}>
-                        
-                        {/* Navbar element first */}
-                        <NavBar/>
 
                         {/* Page content */}
-                        <div style= {this.pageDivStyle } className="col" id="page">
+                        <div style= {this.pageDivStyle } id="page">
                             <h1 style= { this.titleStyle }>Nokia Auto-TSF</h1>
                             <div id="content" style={this.contentDivStyle}>
                                 <div className="row" style = {{ marginLeft: "18vw", marginTop: "3vh"}}>
@@ -63,7 +61,7 @@ class NokiaProj extends Component{
                                 </div>
                                 <div className="row" style = {{ marginLeft: "18vw", marginTop: "3vh", width: "40vw"}}>
                                     <div className="card-deck">
-                                    <div className="card" style={{height: "22vh"}}>
+                                    <div className="card" style={{width: "25vw"}}>
                                             <div className="card-body">
                                                 <h4 className="card-title">Background</h4>
                                                 <p className="card-text">A senior design project with Nokia for automatic time series forecasting based on a collection of models.</p>
@@ -75,7 +73,7 @@ class NokiaProj extends Component{
                                                 </div>
                                             </div>
                                     </div>
-                                    <div className="card" style={{height: "22vh"}}>
+                                    <div className="card" style={{width: "25vw"}}>
                                             <div className="card-body">
                                                 <h4 className="card-title">Information</h4>
                                                 <p className="card-text">ReactJS UI that communicates with a Flask API to perform and display forecasts.</p>
@@ -88,7 +86,7 @@ class NokiaProj extends Component{
                                                 </div>
                                             </div>
                                     </div>
-                                    <div className="card" style={{height: "22vh"}}>
+                                    <div className="card" style={{width: "25vw"}}>
                                             <div className="card-body">
                                                 <h4 className="card-title">Tools</h4>
                                                 <p className="card-text">ReactJS, ChartJS, Axios, Flask, JavaScript, HTML/CSS, MongoDB</p>
@@ -99,8 +97,6 @@ class NokiaProj extends Component{
                                 </div>
                             </div>
                         </div>
-
-                        <Footer/>
 
                     </div>
                 </div>

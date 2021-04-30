@@ -75,7 +75,7 @@
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: rgb(0, 51, 25);
   color: white;
   transform: rotateY(180deg);
 }
@@ -120,6 +120,17 @@
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 /* Add animation (fade in the popup) */
