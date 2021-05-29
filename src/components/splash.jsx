@@ -13,12 +13,12 @@ class Splash extends Component {
     }
 
     textStyle= {
-        fontSize: '50px',
+        fontSize: '3vw',
         fontWeight: "bold",
         color: "white",
         textAlign: "center",
         paddingTop: "2rem",
-        textShadow: "0 0 3px black"
+        textShadow: "0 0 0.5vw black"
     }
 
     render() { 

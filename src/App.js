@@ -16,7 +16,7 @@ class App extends Component{
   bgStyle = {
     backgroundImage: "url('/img/splash_bg.png')",
     backgroundSize: "cover",
-    overflow: "hidden",
+    overflow: "scroll",
     height: "100vh",
     width: "100vw"
   }
@@ -35,8 +35,8 @@ class App extends Component{
           <Route path="/about" component={About}/>
           <Route path="/" component={Splash}/>
         </Switch>
+        <Footer/>
       </div>
-      <Footer/>
     </React.Fragment>
     );
     }

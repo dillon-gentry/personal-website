@@ -31,7 +31,7 @@ class NavBar extends Component {
 
     closeStyle={
         textDecoration: "none",
-        fontSize: "50px",
+        fontSize: "3rem",
         color: "white",
         display: "block",
         marginLeft: "3vw", 
@@ -39,10 +39,10 @@ class NavBar extends Component {
     }
 
     toggleStyle = {
-      paddingLeft: "2vw",
+      paddingLeft: "1vw",
       paddingTop: "45vh",
       textDecoration: "none",
-      fontSize: "50px",
+      fontSize: "4vw",
       color: "white",
       display: "block",
     }
