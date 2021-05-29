@@ -18,7 +18,7 @@ class Footer extends Component {
             <footer style={this.footerStyle} id="foot">
             <div className="row" style={{ marginLeft: "0vw", marginTop: "2vh", marginRight: "6vw" }}>
                 <div style={{marginRight: "0vw", paddingTop: "1vh", width: "25vw", textAlign: "center"}}>
-                    <h4 style={{color: "white"}}>Last updated: 4/29/2021</h4>
+                    <h4 style={{color: "white"}}>Last updated: 5/29/2021</h4>
                 </div>
                 <div style={{marginRight: "0vw", paddingTop: "1.5vh", width: "50vw", position: "absolute", left: "25vw", textAlign: "center"}}>
                     <h6 style={{color: "white"}}>Made with ReactJS, HTML, CSS, Bootstrap 4, ScreenToGif, and FontAwesome.</h6>

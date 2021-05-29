@@ -120,7 +120,6 @@ class NavBar extends Component {
                 </a>
               </div>
             </div>
-            {/* <Footer/> */}
           </React.Fragment>
         );
     }

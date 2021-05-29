@@ -2,34 +2,6 @@ import React, { Component } from 'react';
 
 class NokiaProj extends Component{
 
-    titleStyle = {
-        fontSize: "5rem",
-        textAlign: "center"
-    }
-
-    bgStyle = {
-        backgroundImage: "url('/img/splash_bg.png')",
-        backgroundSize: "cover",
-        overflow: "hidden",
-        height: "100vh",
-        widht: "100vw"
-    }
-
-    pageDivStyle = {
-        marginLeft: "0vw",
-        width: "100vw",
-        textAlign: "center",
-        position: "absolute",
-        height: "90vh",
-        overflowY: "scroll",
-        overflowX: "hidden"
-    }
-
-    contentDivStyle = {
-        position: "relative",
-        left: "12%"
-    }
-
     togglePopup1 = () => {
         var popup = document.getElementById("popup1");
         popup.classList.toggle("show");
@@ -44,13 +16,12 @@ class NokiaProj extends Component{
     render(){
         return(
             <React.Fragment>
-                <div style={this.bgStyle}>
                     <div className="row" style= {{width: "100vw"}}>
 
                         {/* Page content */}
-                        <div style= {this.pageDivStyle } id="page">
-                            <h1 style= { this.titleStyle }>Nokia Auto-TSF</h1>
-                            <div id="content" style={this.contentDivStyle}>
+                        <div className="col page-div-proj" id="page">
+                            <h1 className="page-title">Nokia Auto-TSF</h1>
+                            <div className="content-div" id="content">
                                 <div className="row" style = {{ marginLeft: "18vw", marginTop: "3vh"}}>
                                 <div class="card" style={{width: "40vw"}}>
                                     <div class="card-body">
@@ -99,7 +70,6 @@ class NokiaProj extends Component{
                         </div>
 
                     </div>
-                </div>
             </React.Fragment>
         );
     }

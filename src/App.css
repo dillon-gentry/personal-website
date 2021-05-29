@@ -28,6 +28,37 @@
   color: #61dafb;
 }
 
+/* Page title for all pages except splash */
+.page-title{
+  font-size: 5rem;
+  text-align: center;
+}
+
+/* Main container for About, Resume, and Projects page content */
+.page-div{
+  margin-left: 0vw;
+  width: 100vw;
+  text-align: center;
+  position: absolute;
+}
+
+/* Main container for project page content */
+.page-div-proj{
+  margin-left: 0vw;
+  width: 100vw;
+  text-align: center;
+  position: absolute;
+  height: 90vh;
+  overflow-Y: scroll;
+  overflow-X: hidden;
+}
+
+/* Page content container for About page and each proj page */
+.content-div{
+  position: relative;
+  left: 12%;
+}
+
 /* Override button color for bootstrap buttons */
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
   background-color: rgb(0, 0, 153) !important;

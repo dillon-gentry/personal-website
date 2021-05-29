@@ -12,19 +12,30 @@ import Navbar from './components/navbar';
 import Footer from './components/footer';
 
 class App extends Component{
+
+  bgStyle = {
+    backgroundImage: "url('/img/splash_bg.png')",
+    backgroundSize: "cover",
+    overflow: "hidden",
+    height: "100vh",
+    width: "100vw"
+  }
+
   render(){ 
     return(
     <React.Fragment>
       <Navbar/>
-      <Switch>
-        <Route path="/projects/auction-house" component={AuctionProj}/>
-        <Route path="/projects/nokia-tsf" component={NokiaProj}/>
-        <Route path="/projects/golf-guru" component={GolfProj}/>
-        <Route path="/projects" component={Projects}/>
-        <Route path="/resume" component={Resume}/>
-        <Route path="/about" component={About}/>
-        <Route path="/" component={Splash}/>
-      </Switch>
+      <div style={this.bgStyle}>
+        <Switch>
+          <Route path="/projects/auction-house" component={AuctionProj}/>
+          <Route path="/projects/nokia-tsf" component={NokiaProj}/>
+          <Route path="/projects/golf-guru" component={GolfProj}/>
+          <Route path="/projects" component={Projects}/>
+          <Route path="/resume" component={Resume}/>
+          <Route path="/about" component={About}/>
+          <Route path="/" component={Splash}/>
+        </Switch>
+      </div>
       <Footer/>
     </React.Fragment>
     );
