@@ -26,16 +26,20 @@ class App extends Component{
     <React.Fragment>
       <Navbar/>
       <div style={this.bgStyle}>
+        <div className="page-parent">
         <Switch>
           <Route path="/projects/auction-house" component={AuctionProj}/>
           <Route path="/projects/nokia-tsf" component={NokiaProj}/>
           <Route path="/projects/golf-guru" component={GolfProj}/>
           <Route path="/projects" component={Projects}/>
           <Route path="/resume" component={Resume}/>
-          <Route path="/about" component={About}/>
+          {/* <Route path="/about" component={About}/> */}
           <Route path="/" component={Splash}/>
         </Switch>
+        </div>
+        <div className="footer-parent">
         <Footer/>
+        </div>
       </div>
     </React.Fragment>
     );

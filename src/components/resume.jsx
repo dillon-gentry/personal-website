@@ -12,7 +12,7 @@ class Resume extends Component {
     contentDivStyle = {
         position: "relative",
         left: "25vw",
-        height: "80vh",
+        height: "75vh",
         width: "50vw",
         overflow: "scroll"
     }
