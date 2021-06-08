@@ -21,15 +21,18 @@ class Projects extends Component {
                         <div className="page-div" id="page">
                             
                             {/*Page title */}
-                            <h1 className="page-title">Projects</h1>
+                            <div className="page-title-div">
+                                <h1 className="page-title">Projects</h1>
+                            </div>
+                            
 
                             {/*Page content*/}
-                            <div id="content" style={{marginLeft: "3vw"}}>
-                                <div className="row" style = {{ marginLeft: "10vw", marginTop: "3vh"}}>
+                            <div id="content">
+                                <div className="row" style = {{ marginTop: "15vh", width: "96vw"}}>
 
                                     {/*Projects card deck*/}
                                     <div className="card-deck">
-                                        <div className="card" style={{height: "22vh"}}>
+                                        <div className="card" style={{width: "20vw", position: "absolute", left: "10vw", height: "25vh"}}>
                                             <div className="card-body">
                                                 <h4 className="card-title">Golf Guru IDB</h4>
                                                 <p className="card-text">Tools</p>
@@ -37,7 +40,7 @@ class Projects extends Component {
                                                 <a href="/projects/golf-guru" class="btn btn-primary">Learn More</a>
                                             </div>
                                         </div>
-                                        <div className="card" style={{marginTop: "22vh", height: "22vh"}}>
+                                        <div className="card" style={{width: "20vw", position: "absolute", left: "40vw", padding: "0", height: "25vh"}}>
                                             <div className="card-body">
                                                 <h4 className="card-title">Nokia Auto-Forecasting</h4>
                                                 <p className="card-text">Tools</p>
@@ -45,7 +48,7 @@ class Projects extends Component {
                                                 <a href="/projects/nokia-tsf" class="btn btn-primary">Learn More</a>
                                             </div>
                                         </div>
-                                        <div className="card" style={{marginTop: "44vh"}}>
+                                        <div className="card" style={{width: "20vw", position: "absolute", left: "70vw", height: "25vh"}}>
                                             <div className="card-body">
                                                 <h4 className="card-title">Auction House</h4>
                                                 <p className="card-text">Tools</p>

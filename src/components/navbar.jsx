@@ -18,7 +18,7 @@ class NavBar extends Component {
         marginLeft: "3vw",
         marginBottom: "3vh",
         textDecoration: "none",
-        fontSize: "50px",
+        fontSize: "3rem",
         color: "white",
         padding: "1px"
     }
@@ -67,13 +67,13 @@ class NavBar extends Component {
         navBarCSS.width = "0";
         toggleDivCSS.marginLeft = "0vw";
         toggleDivCSS.width = "4vw";
-        toggleCSS.paddingLeft = "2vw";
+        toggleCSS.paddingLeft = "1vw";
       }else{
         chevron = 'left';
         navBarCSS.width = "18vw";
         toggleDivCSS.marginLeft = "18vw";
-        toggleDivCSS.width = "3vw";
-        toggleCSS.paddingLeft = "0.5vw";
+        toggleDivCSS.width = "4vw";
+        toggleCSS.paddingLeft = "1vw";
       }
       this.toggleStyle = toggleCSS;
       this.navStyle = navBarCSS;
@@ -92,23 +92,15 @@ class NavBar extends Component {
                     <i className="fas fa-exclamation-triangle fa-9x col-7"></i>
                   </div>
                   <div style={{marginBottom: "2vh"}}>
-                  <a style= { this.navContentStyle } href="/">
+                  <a className="nav-content" href="/">
                   <i className="fas fa-home fa"></i> Home</a>
                   </div>
                   <div style={{marginBottom: "2vh"}}>
-                  <a style= { this.navContentStyle } href="/about">
-                  <i class="fas fa-user"></i> About</a>
-                  </div>
-                  <div style={{marginBottom: "2vh"}}>
-                  <a style= { this.navContentStyle } href="/projects">
+                  <a className="nav-content" href="/projects">
                   <i class="fas fa-laptop-code"></i> Projects</a>
                   </div>
-                  {/* <div style={{marginBottom: "2vh"}}>
-                  <a style= { this.navContentStyle } href="/contact">
-                  <i class="fas fa-envelope"></i> Contact</a>
-                  </div> */}
                   <div style={{marginBottom: "2vh"}}>
-                  <a style= { this.navContentStyle } href="/resume">
+                  <a className="nav-content" href="/resume">
                   <i class="fas fa-file-alt"></i> Resume</a>
                   </div>
                 </div>

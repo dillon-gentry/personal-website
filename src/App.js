@@ -1,6 +1,5 @@
 import './App.css';
 import Splash from './components/splash';
-import About from './components/about';
 import Projects from './components/projects';
 import Resume from './components/resume';
 import AuctionProj from './components/auctionproj';
@@ -24,15 +23,14 @@ class App extends Component{
   render(){ 
     return(
     <React.Fragment>
-      <Navbar/>
       <div style={this.bgStyle}>
+      <Navbar/>
         <Switch>
           <Route path="/projects/auction-house" component={AuctionProj}/>
           <Route path="/projects/nokia-tsf" component={NokiaProj}/>
           <Route path="/projects/golf-guru" component={GolfProj}/>
           <Route path="/projects" component={Projects}/>
           <Route path="/resume" component={Resume}/>
-          <Route path="/about" component={About}/>
           <Route path="/" component={Splash}/>
         </Switch>
         <Footer/>

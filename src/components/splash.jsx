@@ -5,33 +5,16 @@ import React, { Component } from 'react';
 
 class Splash extends Component {
 
-    imgStyle = {
-        marginTop: "10vh",
-        display: "block",
-        marginLeft: "auto",
-        marginRight: "auto"
-    }
-
-    textStyle= {
-        fontSize: '3vw',
-        fontWeight: "bold",
-        color: "white",
-        textAlign: "center",
-        paddingTop: "2rem",
-        textShadow: "0 0 0.5vw black"
-    }
-
     render() { 
         return (
           <React.Fragment>
             <img
-              className="rounded-circle"
-              style={this.imgStyle}
+              className="rounded-circle splash-img"
               src="/img/splash_headshot.jpg"
               alt="headshot"
             ></img>
-            <h1 style={this.textStyle}>Hi, my name is Dillon Gentry.</h1>
-            <h2 style={this.textStyle}>
+            <h1 className="splash-text">Hi, my name is Dillon Gentry.</h1>
+            <h2 className="splash-text">
               I study software engineering and design.
             </h2>
           </React.Fragment>
