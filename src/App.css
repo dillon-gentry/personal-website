@@ -27,6 +27,18 @@
 .App-link {
   color: #61dafb;
 }
+.page-parent{
+  height: 85vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+
+.footer-parent{
+  height: 15vh;
+  width: 100vw;
+  position: relative;
+}
 
 a{
   text-decoration: none !important;
@@ -127,16 +139,61 @@ footer{
   text-decoration: none !important;
   color: white; 
   display: block;
-  padding: 1px;
+  /* padding: 1px; */
 }
 
 .footer-logo{
   text-decoration: none;
-  font-size: 3vw;
-  margin-bottom: 1vh;
+  font-size: 4vw;
+  /* margin-bottom: 1vh; */
 }
 
-/* Responsiveness adjustments below */
+/* .rounded-circle{
+  height: 20vh !important;
+  width: 20vh !important;
+} */
+
+.leftbox {
+  /* float: left;  */
+  background: none;
+  width: 25%;
+  height: 280px;
+  text-align: center;
+  padding-right: 4vw;
+}
+.middlebox{
+  /* float: left;  */
+  background: none;
+  width: 50%;
+  height: 280px;
+  text-align: center;
+}
+.rightbox1{
+  /* float:right; */
+  background: none;
+  width:12.5%;
+  height:280px;
+  text-align: center;
+  padding-left: 5vw;
+}
+
+.rightbox2{
+  background: none;
+  width:12.5%;
+  height:280px;
+  text-align: center;
+  padding-right: 5vw;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
 
 /* For 32" 720p Roku tv */
 @media screen and (min-width: 1200px) and (max-width: 1600px){

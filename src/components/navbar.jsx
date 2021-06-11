@@ -25,8 +25,8 @@ class NavBar extends Component {
 
     navLogoStyle = {
         marginTop: "10vh",
-        marginLeft: "5vw",
-        marginBottom: "8vh"
+        marginBottom: "8vh",
+        textAlign: "center"
     }
 
     closeStyle={
@@ -88,7 +88,7 @@ class NavBar extends Component {
             <div className="row" style={{width: "24vw"}}>
               <div>
                 <div id="navBar" style= { this.navStyle }>
-                  <div className="row" style={ this.navLogoStyle }>
+                  <div style={ this.navLogoStyle }>
                     <i className="fas fa-exclamation-triangle fa-9x col-7"></i>
                   </div>
                   <div style={{marginBottom: "2vh"}}>
