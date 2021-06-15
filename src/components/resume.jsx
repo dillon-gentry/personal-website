@@ -24,9 +24,9 @@ class Resume extends Component {
                 <div className="row" style= {{width: "100vw"}}>
                     <div className="page-div" id="page">
                         <h1 className="page-title">Resume</h1>
-                        <div style={ this.contentDivStyle } id="content">
+                        <div className="resume-div" id="content">
                             <Document file={this.state.file}>
-                                <Page pageNumber={this.state.pageNumber} width="1000"/>
+                                <Page pageNumber={this.state.pageNumber} width={1000} scale={0.5}/>
                             </Document>
                             <p style={{color: "white"}}>Page {this.state.pageNumber} of {this.state.numPages}</p>
                         </div>

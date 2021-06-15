@@ -2,17 +2,18 @@ import React, { Component } from 'react';
 
 class NavBar extends Component {
     state = {
-      chevron: "right"
+      chevron: "right",
+      navbar: "close"
     };
 
-    navStyle = {
-      zIndex: "2",
-      height: "100vh",
-      width: "0vw",
-      position: "fixed",
-      backgroundColor: "rgb(0, 51, 25)",
-      overflowX: "hidden"
-    }
+    // navStyle = {
+    //   zIndex: "2",
+    //   height: "100vh",
+    //   width: "0vw",
+    //   position: "fixed",
+    //   backgroundColor: "rgb(0, 51, 25)",
+    //   overflowX: "hidden"
+    // }
 
     navContentStyle = {
         marginLeft: "3vw",
@@ -38,59 +39,61 @@ class NavBar extends Component {
         marginTop: "1vw"
     }
 
-    toggleStyle = {
-      paddingLeft: "1vw",
-      paddingTop: "45vh",
-      textDecoration: "none",
-      fontSize: "4vw",
-      color: "white",
-      display: "block",
-    }
+    // toggleStyle = {
+    //   paddingLeft: "1vw",
+    //   paddingTop: "45vh",
+    //   textDecoration: "none",
+    //   fontSize: "4vw",
+    //   color: "white",
+    //   display: "block",
+    // }
 
-    toggleDivStyle={
-      zIndex: "3",
-      position: "fixed",
-      marginLeft: "0",
-      height: "100vh",
-      width: "4vw",
-      backgroundColor: "rgb(0, 0, 153)"
-    }
+    // toggleDivStyle={
+    //   zIndex: "3",
+    //   position: "fixed",
+    //   marginLeft: "0",
+    //   height: "100vh",
+    //   width: "4vw",
+    //   backgroundColor: "rgb(0, 0, 153)"
+    // }
 
     toggleNav = () => {
       const dir = this.state.chevron;
       let chevron = '';
-      let navBarCSS = {...this.navStyle};
-      let toggleDivCSS = {...this.toggleDivStyle};
-      let toggleCSS = {...this.toggleStyle};
+      let navbar = '';
+      // let navBarCSS = {...this.navStyle};
+      // let toggleDivCSS = {...this.toggleDivStyle};
+      // let toggleCSS = {...this.toggleStyle};
       if(dir === 'left'){
         chevron = 'right';
-        navBarCSS.width = "0";
-        toggleDivCSS.marginLeft = "0vw";
-        toggleDivCSS.width = "4vw";
-        toggleCSS.paddingLeft = "1vw";
+        navbar = 'close';
+        // navBarCSS.width = "0";
+        // toggleDivCSS.marginLeft = "0vw";
       }else{
         chevron = 'left';
-        navBarCSS.width = "18vw";
-        toggleDivCSS.marginLeft = "18vw";
-        toggleDivCSS.width = "4vw";
-        toggleCSS.paddingLeft = "1vw";
+        navbar = 'open';
+        // navBarCSS.width = "18vw";
+        // toggleDivCSS.marginLeft = "18vw";
       }
-      this.toggleStyle = toggleCSS;
-      this.navStyle = navBarCSS;
-      this.toggleDivStyle = toggleDivCSS;
+      // this.toggleStyle = toggleCSS;
+      // this.navStyle = navBarCSS;
+      // this.toggleDivStyle = toggleDivCSS;
+      this.setState({navbar});
       this.setState({chevron});
     };
 
     render() {
-      const chevronClass = "fas fa-chevron-"+this.state.chevron; 
+      const chevronClass = "fas fa-chevron-"+this.state.chevron;
+      const navbarStatus = this.state.navbar; 
         return (
           <React.Fragment>
             <div className="row" style={{width: "24vw"}}>
               <div>
-                <div id="navBar" style= { this.navStyle }>
-                  <div style={ this.navLogoStyle }>
+                <div id="navBar" className={"nav-"+navbarStatus}>
+                  {/* <div style={ this.navLogoStyle }>
                     <i className="fas fa-exclamation-triangle fa-9x col-7"></i>
-                  </div>
+                  </div> */}
+                  <div style={{marginTop: "40vh"}}>
                   <div style={{marginBottom: "2vh"}}>
                   <a className="nav-content" href="/">
                   <i className="fas fa-home fa"></i> Home</a>
@@ -103,12 +106,13 @@ class NavBar extends Component {
                   <a className="nav-content" href="/resume">
                   <i class="fas fa-file-alt"></i> Resume</a>
                   </div>
+                  </div>
                 </div>
               </div>
           
-              <div style={ this.toggleDivStyle }>
+              <div className={"toggle-div-" + navbarStatus}>
                 <a onClick={ () => this.toggleNav() }>
-                  <i className={ chevronClass } style={ this.toggleStyle }></i>
+                  <i className={ chevronClass + " toggle-" + this.state.chevron} ></i>
                 </a>
               </div>
             </div>

@@ -50,6 +50,24 @@ a:hover{
 
 /* Navbar CSS */
 
+.nav-open{
+  z-index: 2;
+  height: 100vh;
+  width: 18vw;
+  position: fixed;
+  background-color: rgb(0, 51, 25);
+  overflow-x: hidden;
+}
+
+.nav-close{
+  z-index: 2;
+  height: 100vh;
+  width: 0vw;
+  position: fixed;
+  background-color: rgb(0, 51, 25);
+  overflow-x: hidden;
+}
+
 .nav-content{
   margin-left: 3vw;
   margin-bottom: 3vh;
@@ -57,6 +75,42 @@ a:hover{
   font-size: 2.5vw;
   color: white;
   padding: 1px;
+}
+
+.toggle-left{
+  padding-left: 1vw;
+  padding-top: 45vh;
+  text-decoration: none;
+  font-size: 4vw;
+  color: white;
+  display: block;
+}
+
+.toggle-right{
+  padding-left: 1vw;
+  padding-top: 45vh;
+  text-decoration: none;
+  font-size: 4vw;
+  color: white;
+  display: block;
+}
+
+.toggle-div-close{
+  z-index: 3;
+  position: fixed;
+  margin-left: 0;
+  height: 100vh;
+  width: 4vw;
+  background-color: rgb(0, 0, 153);
+}
+
+.toggle-div-open{
+  z-index: 3;
+  position: fixed;
+  margin-left: 18vw;
+  height: 100vh;
+  width: 4vw;
+  background-color: rgb(0, 0, 153);
 }
 
 /* Splash page CSS */
@@ -116,6 +170,14 @@ a:hover{
 .content-div{
   position: relative;
   left: 12%;
+}
+
+.resume-div{
+  position: absolute;
+  left: 25vw;
+  height: 70vh;
+  width: 50vw;
+  overflow: scroll;
 }
 
 /* Footer CSS */
@@ -194,6 +256,79 @@ footer{
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
+
+ /* For mobile */
+ @media screen and (min-width: 400px) and (max-width: 600px){
+  
+  .toggle-div-close{
+    width: 6vw;
+  }
+
+  .toggle-div-open{
+    width: 4vw;
+  }
+
+  .toggle-left{
+    padding-left: 1vw;
+  }
+
+  .toggle-right{
+    padding-left: 3vw;
+  }
+
+  .page-title{
+    font-size: 8vw;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 0.5vw black;
+  }
+
+  .rounded-circle{
+    width: 40vw !important;
+  }
+  
+  .splash-text{
+    font-size: 4vw;
+  }
+
+  .react-pdf__Page__canvas {
+    margin: 0 auto;
+    width: 600px !important;
+    /* scale: 0.1% !important; */
+  }
+  .resume-div{
+    left: 15vw;
+    height: 80vh;
+    width: 70vw;
+  }
+
+  .card-deck{
+    position: absolute;
+    left: 20vw;
+
+  }
+
+  .card{
+    width: 68vw !important;
+  }
+
+  .card-title{
+    font-size: 3vw !important;
+  }
+
+  .card-text{
+    font-size: 2.5vw !important;
+  }
+
+  .btn{
+    font-size: 2.5vw !important;
+  }
+  
+  .footer-text{
+     color: white;
+     font-size: 2vw;
+   }
+ }
 
 /* For 32" 720p Roku tv */
 @media screen and (min-width: 1200px) and (max-width: 1600px){
