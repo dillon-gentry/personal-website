@@ -187,7 +187,7 @@ footer{
   position: fixed;
   left: 0vw;
   bottom: 0;
-  height: 10vh;
+  height: vh;
   width: 100vw;
   background: transparent;
 }
@@ -260,20 +260,32 @@ footer{
  /* For mobile */
  @media screen and (min-width: 400px) and (max-width: 600px){
   
+  .nav-open{
+    width: 30vw;
+  }
+
+  .nav-content{
+    margin-left: 6vw;
+    margin-bottom: 3vh;
+    font-size: 4vw;
+    padding: 1px;
+  }
+
   .toggle-div-close{
-    width: 6vw;
+    width: 8vw;
   }
 
   .toggle-div-open{
-    width: 4vw;
+    width: 5vw;
+    margin-left: 30vw;
   }
 
   .toggle-left{
-    padding-left: 1vw;
+    padding-left: 1.5vw;
   }
 
   .toggle-right{
-    padding-left: 3vw;
+    padding-left: 4.5vw;
   }
 
   .page-title{
@@ -326,7 +338,20 @@ footer{
   
   .footer-text{
      color: white;
-     font-size: 2vw;
+     font-size: 3vw;
+     text-align: center;
+   }
+
+   .footer-logo{
+    font-size: 10vw;
+   }
+
+   footer{
+    left: 0vw;
+    bottom: 0;
+    height: 12vh;
+    width: 100vw;
+    background: transparent;
    }
  }
 

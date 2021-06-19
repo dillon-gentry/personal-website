@@ -61,23 +61,13 @@ class NavBar extends Component {
       const dir = this.state.chevron;
       let chevron = '';
       let navbar = '';
-      // let navBarCSS = {...this.navStyle};
-      // let toggleDivCSS = {...this.toggleDivStyle};
-      // let toggleCSS = {...this.toggleStyle};
       if(dir === 'left'){
         chevron = 'right';
         navbar = 'close';
-        // navBarCSS.width = "0";
-        // toggleDivCSS.marginLeft = "0vw";
       }else{
         chevron = 'left';
         navbar = 'open';
-        // navBarCSS.width = "18vw";
-        // toggleDivCSS.marginLeft = "18vw";
       }
-      // this.toggleStyle = toggleCSS;
-      // this.navStyle = navBarCSS;
-      // this.toggleDivStyle = toggleDivCSS;
       this.setState({navbar});
       this.setState({chevron});
     };

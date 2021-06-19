@@ -35,8 +35,8 @@ class Projects extends Component {
 
                                     {/*Projects card deck*/}
                                     <div className="card-deck">
-                                        {/* <div className="card"> */}
-                                        <div className="card" style={{width: "20vw", position: "absolute", left: "10vw", height: "25vh"}}>
+                                        <div className="card">
+                                        {/* <div className="card" style={{width: "20vw", position: "absolute", left: "10vw", height: "25vh"}}> */}
                                             <div className="card-body">
                                                 <h4 className="card-title">Golf Guru IDB</h4>
                                                 {/* <p className="card-text">Tools</p> */}
@@ -44,8 +44,8 @@ class Projects extends Component {
                                                 <a href="/projects/golf-guru" class="btn btn-primary">Learn More</a>
                                             </div>
                                         </div>
-                                        {/* <div className="card"> */}
-                                        <div className="card" style={{width: "20vw", position: "absolute", left: "40vw", padding: "0", height: "25vh"}}>
+                                        <div className="card">
+                                        {/* <div className="card" style={{width: "20vw", position: "absolute", left: "40vw", padding: "0", height: "25vh"}}> */}
                                             <div className="card-body">
                                                 <h4 className="card-title">Nokia Auto-Forecasting</h4>
                                                 {/* <p className="card-text">Tools</p> */}
@@ -53,9 +53,9 @@ class Projects extends Component {
                                                 <a href="/projects/nokia-tsf" class="btn btn-primary">Learn More</a>
                                             </div>
                                         </div>
-                                        {/* <div className="card"> */}
+                                        <div className="card">
 
-                                        <div className="card" style={{width: "20vw", position: "absolute", left: "70vw", height: "25vh"}}>
+                                        {/* <div className="card" style={{width: "20vw", position: "absolute", left: "70vw", height: "25vh"}}> */}
                                             <div className="card-body">
                                                 <h4 className="card-title">Auction House</h4>
                                                 {/* <p className="card-text">Tools</p> */}
