@@ -258,7 +258,7 @@ footer{
 }
 
  /* For mobile */
- @media screen and (min-width: 400px) and (max-width: 600px){
+ @media screen and (min-width: 200px) and (max-width: 600px){
   
   .nav-open{
     width: 30vw;

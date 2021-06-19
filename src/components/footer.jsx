@@ -7,7 +7,7 @@ class Footer extends Component {
     render() { 
         return (
             <footer>
-            <MediaQuery minDeviceWidth={400}>
+            <MediaQuery minDeviceWidth={200}>
                 <div className="col">
                 <div className="row" style={{marginLeft: "20vw", width: "20vw", right: "60vw"}}>
                     
