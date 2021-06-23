@@ -7,9 +7,9 @@ class Footer extends Component {
     render() { 
         return (
             <footer>
-            <MediaQuery minDeviceWidth={200}>
-                <div className="col">
-                <div className="row" style={{marginLeft: "20vw", width: "20vw", right: "60vw"}}>
+            <MediaQuery minDeviceWidth={200} maxDeviceWidth={600}>
+                <div>
+                <div  className="row"style={{marginLeft: "20vw", marginRight: "20vw", width: "60vw"}}>
                     
                     <a href="mailto: djg81999@gmail.com" className="footer-logo-link">
                         <i className="fas fa-envelope-square footer-logo"></i>

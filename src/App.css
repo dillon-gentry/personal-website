@@ -187,7 +187,7 @@ footer{
   position: fixed;
   left: 0vw;
   bottom: 0;
-  height: vh;
+  height: 10vh;
   width: 100vw;
   background: transparent;
 }
@@ -322,6 +322,7 @@ footer{
 
   .card{
     width: 68vw !important;
+    padding: 3vw !important;
   }
 
   .card-title{
