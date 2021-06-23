@@ -9,21 +9,21 @@ class Footer extends Component {
             <footer>
             <MediaQuery minDeviceWidth={200} maxDeviceWidth={600}>
                 <div>
-                <div  className="row"style={{marginLeft: "20vw", marginRight: "20vw", width: "60vw"}}>
+                <h4 className="footer-text">Last updated: 5/29/2021</h4>
+                <h6 className="footer-text">Made with ReactJS, HTML, CSS, Bootstrap 4, ScreenToGif, and FontAwesome.</h6>
+                <div  className="row" style={{width: "100vw", textAlign: "center", marginBottom: "1vh"}}>
                     
-                    <a href="mailto: djg81999@gmail.com" className="footer-logo-link">
+                    <a style={{position: "absolute", left: "26vw"}}href="mailto: djg81999@gmail.com" className="footer-logo-link">
                         <i className="fas fa-envelope-square footer-logo"></i>
                     </a>
-                    <a className="footer-logo-link" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
+                    <a style={{position: "absolute", left: "66vw"}}className="footer-logo-link" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
                         <i className="fab fa-linkedin footer-logo"></i>
                     </a>
                 
                 </div>
-                <h4 className="footer-text">Last updated: 5/29/2021</h4>
-                <h6 className="footer-text">Made with ReactJS, HTML, CSS, Bootstrap 4, ScreenToGif, and FontAwesome.</h6>
                 </div>
             </MediaQuery>
-            <MediaQuery minDeviceWidth={1224}>
+            <MediaQuery minDeviceWidth={601}>
                 {/* <p>You are a desktop or laptop</p> */}
                 <div className="row">
                     <div style={{marginLeft: "0.5vw", paddingTop: "1vh", width: "33vw", textAlign: "center"}}>

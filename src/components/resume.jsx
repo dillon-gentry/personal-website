@@ -22,13 +22,14 @@ class Resume extends Component {
 
         return (
             <React.Fragment>
-                <div className="row" style= {{width: "100vw"}}>
                     <div className="page-div" id="page">
-                        <h1 className="page-title">Resume</h1>
+                        {/* <div className="page-title-div"> */}
+                            <h1 className="page-title">Resume</h1>
+                        {/* </div> */}
                         <div className="resume-div" id="content">
                             <Document file={this.state.file}>
                                 <MediaQuery minDeviceWidth={200} maxDeviceWidth={600}>
-                                    <Page pageNumber={this.state.pageNumber} width={1000} scale={0.5}/>
+                                    <Page pageNumber={this.state.pageNumber} width={1200} scale={0.5}/>
                                 </MediaQuery>
                                 <MediaQuery minDeviceWidth={1000}>
                                     <Page pageNumber={this.state.pageNumber} width={2000} scale={0.5}/>
@@ -37,7 +38,7 @@ class Resume extends Component {
                             <p style={{color: "white"}}>Page {this.state.pageNumber} of {this.state.numPages}</p>
                         </div>
                     </div>
-                </div>   
+                {/* </div>    */}
             </React.Fragment>
           );
     }

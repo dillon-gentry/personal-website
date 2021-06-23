@@ -18,23 +18,23 @@ class Projects extends Component {
     render() {
         return (
             <React.Fragment>
-                    <div className="row" style= {{width: "100vw"}}>
+                    {/* <div className="row" style= {{width: "100vw"}}> */}
 
                         {/* Page content */}
                         <div className="page-div" id="page">
                             
                             {/*Page title */}
-                            <div className="page-title-div">
+                            {/* <div className="page-title-div"> */}
                                 <h1 className="page-title">Projects</h1>
-                            </div>
+                            {/* </div> */}
                             
 
                             {/*Page content*/}
                             <div id="content">
-                                <div className="row" style = {{ marginTop: "15vh", width: "96vw"}}>
+                                {/* <div className="row" style = {{ marginTop: "15vh", width: "96vw"}}> */}
 
                                     {/*Projects card deck*/}
-                                    <div className="card-deck">
+                                    <div className="card-deck" style={{position: "absolute", left: "20vw"}}>
                                         <div className="card">
                                         {/* <div className="card" style={{width: "20vw", position: "absolute", left: "10vw", height: "25vh"}}> */}
                                             <div className="card-body">
@@ -67,8 +67,8 @@ class Projects extends Component {
 
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        {/* </div> */}
+                    {/* // </div> */}
             </React.Fragment>
           );
     }

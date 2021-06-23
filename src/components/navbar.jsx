@@ -77,7 +77,7 @@ class NavBar extends Component {
       const navbarStatus = this.state.navbar; 
         return (
           <React.Fragment>
-            <div className="row" style={{width: "24vw"}}>
+            {/* <div className="row"> */}
               <div>
                 <div id="navBar" className={"nav-"+navbarStatus}>
                   {/* <div style={ this.navLogoStyle }>
@@ -105,7 +105,7 @@ class NavBar extends Component {
                   <i className={ chevronClass + " toggle-" + this.state.chevron} ></i>
                 </a>
               </div>
-            </div>
+            {/* </div> */}
           </React.Fragment>
         );
     }
