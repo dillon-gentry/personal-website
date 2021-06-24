@@ -137,14 +137,11 @@ a:hover{
 }
 
 .card{
-  margin: 0 !important;
+  margin: 0px !important;
+  padding: 0px !important;
 }
 
 .page-title-div{
-  /* width: 60vw;
-  position: absolute;
-  left: 20vw;
-  right: 80vw; */
   width: 100vw;
   text-align: center;
 }
@@ -154,7 +151,6 @@ a:hover{
   margin-left: 0vw;
   width: 100vw;
   text-align: center;
-  /* position: absolute; */
 }
 
 /* Main container for project page content */
@@ -171,8 +167,6 @@ a:hover{
 /* Page content container for About page and each proj page */
 .content-div{
   text-align: center;
-  /* position: relative;
-  left: 12%; */
 }
 
 .resume-div{
@@ -197,36 +191,17 @@ footer{
 
 .footer-text{
   color: white;
-  /* font-size: 1.5vw; */
 }
 
 .footer-logo-link{
   text-decoration: none !important;
   color: white; 
   display: block;
-  /* padding: 1px; */
 }
 
 .footer-logo{
   text-decoration: none;
   font-size: 4vw;
-  /* width: 5vw; */
-  /* margin-bottom: 1vh; */
-}
-
-/* .rounded-circle{
-  height: 20vh !important;
-  width: 20vh !important;
-} */
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  height: 300px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
  /* For mobile */
@@ -275,11 +250,6 @@ footer{
     font-size: 6vw;
   }
 
-  /* .react-pdf__Page__canvas {
-    margin: 0 auto;
-    width: 600px !important;
-    /* scale: 0.1% !important;
-  } */
   .resume-div{
     color:white;
     position: absolute;
@@ -345,10 +315,16 @@ footer{
     width: 15vw !important;
   }
 
+  .card{
+    height: 28vh !important;
+  }
+
   .footer-text{
     color: red;
     font-size: 1.5vw;
   }
+
+
 }
 
 /* For 27" 1080p Samsung monitor */
@@ -356,6 +332,16 @@ footer{
   .nav-content{
     font-size: 2.5vw;
   }
+
+  .resume-div{
+    left: 25vw;
+    height: 75vh;
+    width: 50vw;
+  }
+
+  /* .card{
+    height: 25vh !important;
+  } */
   
   .footer-text{
     color: blue;
@@ -369,6 +355,16 @@ footer{
     font-size: 2.5vw;
   }
   
+  .resume-div{
+    left: 27vw;
+    height: 75vh;
+    width: 46vw;
+  }
+
+  .card{
+    height: 25vh !important;
+  }
+
   .footer-text{
     color: green;
     font-size: 1vw;
