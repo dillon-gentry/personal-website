@@ -350,7 +350,8 @@ footer{
 }
 
 /* For 24" 1440p Dell monitor */
-@media screen and (min-width: 2001px) and (max-width: 2200px){
+/* @media screen and (min-width: 2001px) and (max-width: 2200px){ */
+  @media screen and (min-width: 2001px){
   .nav-content{
     font-size: 2.5vw;
   }
