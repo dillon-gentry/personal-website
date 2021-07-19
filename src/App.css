@@ -320,7 +320,8 @@ footer{
   }
 
   .footer-text{
-    color: red;
+    /* for debugging */
+    /* color: red; */
     font-size: 1.5vw;
   }
 
@@ -344,7 +345,8 @@ footer{
   } */
   
   .footer-text{
-    color: blue;
+    /* for debugging */
+    /* color: blue; */
     font-size: 1vw;
   }
 }
@@ -366,7 +368,8 @@ footer{
   }
 
   .footer-text{
-    color: green;
+    /* for debugging */
+    /* color: green; */
     font-size: 1vw;
   }
 }

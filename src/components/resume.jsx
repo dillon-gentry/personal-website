@@ -24,6 +24,9 @@ class Resume extends Component {
                                 <MediaQuery minDeviceWidth={601}>
                                     <Page pageNumber={this.state.pageNumber} width={2000} scale={0.5}/>
                                 </MediaQuery>
+                                <MediaQuery minDeviceWidth={2400}>
+                                    <Page pageNumber={this.state.pageNumber} width={3000} scale={0.5}/>
+                                </MediaQuery>
                             </Document>
                             <p style={{color: "white"}}>Page {this.state.pageNumber} of {this.state.numPages}</p>
                         </div>
