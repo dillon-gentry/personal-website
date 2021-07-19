@@ -205,7 +205,7 @@ footer{
 }
 
  /* For mobile */
- @media screen and (min-width: 200px) and (max-width: 600px){
+ @media screen and (max-width: 600px){
   
   .nav-open{
     width: 30vw;
@@ -349,8 +349,7 @@ footer{
   }
 }
 
-/* For 24" 1440p Dell monitor */
-/* @media screen and (min-width: 2001px) and (max-width: 2200px){ */
+/* For 24" 1440p Dell monitor and anything larger in pixel width */
   @media screen and (min-width: 2001px){
   .nav-content{
     font-size: 2.5vw;

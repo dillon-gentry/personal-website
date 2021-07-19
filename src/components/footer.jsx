@@ -7,9 +7,9 @@ class Footer extends Component {
     render() { 
         return (
             <footer>
-            <MediaQuery minDeviceWidth={200} maxDeviceWidth={600}>
+            <MediaQuery maxDeviceWidth={600}>
                 <div>
-                <h4 className="footer-text">Last updated: 5/29/2021</h4>
+                <h4 className="footer-text">     Updated: 7/18/2021</h4>
                 <h6 className="footer-text">Made with ReactJS, HTML, CSS, Bootstrap 4, ScreenToGif, and FontAwesome.</h6>
                 <div  className="row" style={{width: "100vw", textAlign: "center", marginBottom: "1vh"}}>
                     
@@ -27,7 +27,7 @@ class Footer extends Component {
                 {/* <p>You are a desktop or laptop</p> */}
                 <div className="row">
                     <div style={{marginLeft: "0.5vw", paddingTop: "1vh", width: "33vw", textAlign: "center"}}>
-                        <h4 className="footer-text">Last updated: 5/29/2021</h4>
+                        <h4 className="footer-text">Last updated: 7/18/2021</h4>
                     </div>
                     <div style={{marginRight: "0vw", paddingTop: "1vh", width: "33vw", position: "absolute", left: "33.5vw", textAlign: "center"}}>
                         <h6 className="footer-text">Made with ReactJS, HTML, CSS, Bootstrap 4, ScreenToGif, and FontAwesome.</h6>
@@ -47,9 +47,6 @@ class Footer extends Component {
                         </div>
                     </div>
                 </div>
-                {/* <MediaQuery minDeviceWidth={1824}>
-                    <p>You also have a huge screen</p>
-                </MediaQuery> */}
             </MediaQuery>
             </footer>
           );

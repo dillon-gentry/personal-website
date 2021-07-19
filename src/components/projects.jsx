@@ -18,9 +18,7 @@ class Projects extends Component {
                             <div id="content">
 
                                     {/*Projects card deck*/}
-                                    
-
-                                        <MediaQuery minDeviceWidth={200} maxDeviceWidth={600}>
+                                        <MediaQuery maxDeviceWidth={600}>
                                         <div className="card-deck" style={{position: "absolute", left: "20vw"}}>
                                             <div className="card">
                                                 <div className="card-body">
