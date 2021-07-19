@@ -18,7 +18,7 @@ class Resume extends Component {
                         <h1 className="page-title">Resume</h1>
                         <div className="resume-div" id="content">
                             <Document file={this.state.file}>
-                                <MediaQuery maxDeviceWidth={600}>
+                                <MediaQuery minDeviceWidth={150} maxDeviceWidth={600}>
                                     <Page pageNumber={this.state.pageNumber} width={1200} scale={0.5}/>
                                 </MediaQuery>
                                 <MediaQuery minDeviceWidth={601}>
