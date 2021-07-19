@@ -9,14 +9,14 @@ class Footer extends Component {
             <footer>
             <MediaQuery maxDeviceWidth={600}>
                 <div>
-                <h4 className="footer-text">     Updated: 7/18/2021</h4>
-                <h6 className="footer-text">Made with ReactJS, HTML, CSS, Bootstrap 4, ScreenToGif, and FontAwesome.</h6>
-                <div  className="row" style={{width: "100vw", textAlign: "center", marginBottom: "1vh"}}>
+                <h4 className="footer-text" style={{position: "absolute", left: "34vw", bottom: "12vh"}}>Last Updated: 7/18/2021</h4>
+                <h6 className="footer-text" style={{position: "absolute", bottom: "6vh"}}>Made with ReactJS, HTML, CSS, Bootstrap 4, ScreenToGif, and FontAwesome.</h6>
+                <div  className="row" style={{width: "100vw", textAlign: "center"}}>
                     
-                    <a style={{position: "absolute", left: "26vw"}}href="mailto: djg81999@gmail.com" className="footer-logo-link">
+                    <a style={{position: "absolute", left: "26vw", bottom: "2vh"}}href="mailto: djg81999@gmail.com" className="footer-logo-link">
                         <i className="fas fa-envelope-square footer-logo"></i>
                     </a>
-                    <a style={{position: "absolute", left: "66vw"}}className="footer-logo-link" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
+                    <a style={{position: "absolute", left: "66vw", bottom: "2vh"}}className="footer-logo-link" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
                         <i className="fab fa-linkedin footer-logo"></i>
                     </a>
                 

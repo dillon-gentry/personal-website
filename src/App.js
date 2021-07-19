@@ -9,6 +9,7 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
+import MediaQuery from 'react-responsive';
 
 class App extends Component{
 
@@ -24,7 +25,22 @@ class App extends Component{
     return(
     <React.Fragment>
       <div style={this.bgStyle}>
+      
       <Navbar/>
+      <MediaQuery maxDeviceWidth={600}>
+        <Switch>
+          <Route path="/projects/auction-house" component={AuctionProj}/>
+          <Route path="/projects/nokia-tsf" component={NokiaProj}/>
+          <Route path="/projects/golf-guru" component={GolfProj}/>
+          <Route path="/projects" component={Projects}/>
+          <Route path="/resume" component={Resume}/>
+          <Route path="/">
+            <Splash/>
+            <Footer/>
+          </Route>
+        </Switch>
+      </MediaQuery>
+      <MediaQuery minDeviceWidth={601}>
         <Switch>
           <Route path="/projects/auction-house" component={AuctionProj}/>
           <Route path="/projects/nokia-tsf" component={NokiaProj}/>
@@ -34,6 +50,7 @@ class App extends Component{
           <Route path="/" component={Splash}/>
         </Switch>
         <Footer/>
+      </MediaQuery>
       </div>
     </React.Fragment>
     );
