@@ -21,10 +21,10 @@ class Resume extends Component {
                                 <MediaQuery minDeviceWidth={150} maxDeviceWidth={600}>
                                     <Page pageNumber={this.state.pageNumber} width={1200} scale={0.5}/>
                                 </MediaQuery>
-                                <MediaQuery minDeviceWidth={601}>
+                                <MediaQuery minDeviceWidth={601} maxDeviceWidth={2400}>
                                     <Page pageNumber={this.state.pageNumber} width={2000} scale={0.5}/>
                                 </MediaQuery>
-                                <MediaQuery minDeviceWidth={2400}>
+                                <MediaQuery minDeviceWidth={2401}>
                                     <Page pageNumber={this.state.pageNumber} width={3000} scale={0.5}/>
                                 </MediaQuery>
                             </Document>
