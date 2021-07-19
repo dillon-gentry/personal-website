@@ -199,6 +199,19 @@ footer{
   display: block;
 }
 
+.fa-linkedin{
+  color: rgb(14,118,168) !important;
+}
+
+.fa-square{
+  font-size: 3.6vw !important;
+  padding: 0.1vw !important;
+}
+.fa-stack{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .footer-logo{
   text-decoration: none;
   font-size: 4vw;

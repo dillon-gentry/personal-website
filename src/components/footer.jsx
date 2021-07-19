@@ -16,7 +16,7 @@ class Footer extends Component {
                     <a style={{position: "absolute", left: "26vw", bottom: "2vh"}}href="mailto: djg81999@gmail.com" className="footer-logo-link">
                         <i className="fas fa-envelope-square footer-logo"></i>
                     </a>
-                    <a style={{position: "absolute", left: "66vw", bottom: "2vh"}}className="footer-logo-link" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
+                    <a style={{position: "absolute", left: "66vw", bottom: "2vh"}}className="footer-logo-link in-logo" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
                         <i className="fab fa-linkedin footer-logo"></i>
                     </a>
                 
@@ -39,9 +39,12 @@ class Footer extends Component {
                                     <i className="fas fa-envelope-square footer-logo"></i>
                                 </a>
                             </div>
-                            <div>
+                            <div style={{paddingTop: "1vw"}}>
                                 <a className="footer-logo-link" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
-                                    <i className="fab fa-linkedin footer-logo"></i>
+                                <span class="fa-stack">
+                                    <i class="fa-stack-1x fa fa-square footer-logo"></i>
+                                    <i class="fa-stack-1x fab fa-linkedin footer-logo"></i>
+                                </span>
                                 </a>
                             </div>  
                         </div>
