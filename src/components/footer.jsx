@@ -9,7 +9,7 @@ class Footer extends Component {
             <footer>
             <MediaQuery maxDeviceWidth={600}>
                 <div>
-                <h4 className="footer-text" style={{position: "absolute", left: "34vw", bottom: "12vh"}}>Last Updated: 7/18/2021</h4>
+                <h4 className="footer-text" style={{position: "absolute", left: "33vw", bottom: "12vh"}}>Last Updated: 7/18/2021</h4>
                 <h6 className="footer-text" style={{position: "absolute", bottom: "6vh"}}>Made with ReactJS, HTML, CSS, Bootstrap 4, ScreenToGif, and FontAwesome.</h6>
                 <div  className="row" style={{width: "100vw", textAlign: "center"}}>
                     
