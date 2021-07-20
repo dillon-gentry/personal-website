@@ -17,15 +17,12 @@ class Splash extends Component {
 
             <h1 className="splash-text">Hi, my name is Dillon Gentry.</h1>
             <MediaQuery minDeviceWidth={200} and maxDeviceWidth={600}>
-            <h2 className="splash-text"> I study software
-            </h2>
-            <h2 className="splash-text"> engineering and design.
-            </h2>
+              <div className="row" style={{width: "80vw", marginLeft: "10vw", textAlign: "center"}}>
+                <h2 className="splash-text"> I am an aspiring software engineer.</h2>
+              </div>
             </MediaQuery>
             <MediaQuery minDeviceWidth={601}>
-            <h2 className="splash-text">
-              I study software engineering and design.
-            </h2>
+            <h2 className="splash-text"> I am an aspiring software engineer.</h2>
             </MediaQuery>
           </React.Fragment>
         );

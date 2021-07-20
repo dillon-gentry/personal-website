@@ -20,7 +20,7 @@ class GolfProj extends Component{
 
                                 {/* For Mobile */}
                                 <MediaQuery maxDeviceWidth={600}>
-                                    <div className="card-deck">
+                                    <div className="card-deck" style={{position: "absolute", left: "20vw", marginTop: "10vh", marginBottom: "10vh"}}>
                                             <div class="card">
                                                     <div className="card-body">
                                                         <h4 className="card-title">Link</h4>

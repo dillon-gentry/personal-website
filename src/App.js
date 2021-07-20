@@ -27,7 +27,7 @@ class App extends Component{
       <div style={this.bgStyle}>
       
       <Navbar/>
-      <MediaQuery maxDeviceWidth={600}>
+      {/* <MediaQuery maxDeviceWidth={600}>
         <Switch>
           <Route path="/projects/auction-house" component={AuctionProj}/>
           <Route path="/projects/nokia-tsf" component={NokiaProj}/>
@@ -39,8 +39,8 @@ class App extends Component{
             <Footer/>
           </Route>
         </Switch>
-      </MediaQuery>
-      <MediaQuery minDeviceWidth={601}>
+      </MediaQuery> */}
+      {/* <MediaQuery minDeviceWidth={601}> */}
         <Switch>
           <Route path="/projects/auction-house" component={AuctionProj}/>
           <Route path="/projects/nokia-tsf" component={NokiaProj}/>
@@ -50,7 +50,7 @@ class App extends Component{
           <Route path="/" component={Splash}/>
         </Switch>
         <Footer/>
-      </MediaQuery>
+      {/* </MediaQuery> */}
       </div>
     </React.Fragment>
     );

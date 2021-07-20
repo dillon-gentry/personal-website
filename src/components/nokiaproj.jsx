@@ -25,7 +25,7 @@ class NokiaProj extends Component{
 
                                 {/* For Mobile */}
                                 <MediaQuery maxDeviceWidth={600}>
-                                <div className="card-deck">
+                                <div className="card-deck" style={{position: "absolute", left: "20vw", marginTop: "10vh", marginBottom: "10vh"}}>
                                     <div className="card">
                                             <div className="card-body">
                                                 <h4 className="card-title">Tools</h4>

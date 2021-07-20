@@ -19,7 +19,7 @@ class Projects extends Component {
 
                                     {/*Projects card deck*/}
                                         <MediaQuery maxDeviceWidth={600}>
-                                        <div className="card-deck" style={{position: "absolute", left: "20vw"}}>
+                                        <div className="card-deck" style={{position: "absolute", left: "20vw", marginTop: "10vh", marginBottom: "10vh"}}>
                                             <div className="card">
                                                 <div className="card-body">
                                                     <h4 className="card-title">Golf Guru IDB</h4>

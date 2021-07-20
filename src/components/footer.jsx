@@ -8,19 +8,27 @@ class Footer extends Component {
         return (
             <footer>
             <MediaQuery maxDeviceWidth={600}>
-                <div>
-                <h4 className="footer-text" style={{position: "absolute", left: "33vw", bottom: "12vh"}}>Last Updated: 7/18/2021</h4>
-                <h6 className="footer-text" style={{position: "absolute", bottom: "6vh"}}>Made with ReactJS, HTML, CSS, Bootstrap 4, ScreenToGif, and FontAwesome.</h6>
-                <div  className="row" style={{width: "100vw", textAlign: "center"}}>
-                    
-                    <a style={{position: "absolute", left: "26vw", bottom: "2vh"}}href="mailto: djg81999@gmail.com" className="footer-logo-link">
-                        <i className="fas fa-envelope-square footer-logo"></i>
+                <h4 className="footer-text" style={{textAlign: "center"}}>Last Updated: 7/18/2021</h4>
+                <div className="row" style={{width: "80vw", marginLeft: "10vw", textAlign: "center"}}>
+                    <h6 className="footer-text">Made with ReactJS, HTML, CSS, Bootstrap 4, ScreenToGif, and FontAwesome.</h6>
+                </div>
+                
+                <div  className="row" style={{width: "22vw", marginTop: "1vw", marginLeft: "39vw"}}>
+                
+                    <a href="mailto: djg81999@gmail.com" className="footer-logo-link">
+                    <span class="fa-stack">
+                        <i class="fa-stack-1x fa fa-square"></i>
+                        <i class="fa-stack-1x fas fa-envelope-square footer-logo"></i>
+                    </span>
                     </a>
-                    <a style={{position: "absolute", left: "66vw", bottom: "2vh"}}className="footer-logo-link in-logo" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
-                        <i className="fab fa-linkedin footer-logo"></i>
+                    {/* <a style={{position: "absolute", left: "66vw", bottom: "2vh"}}className="footer-logo-link in-logo" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/"> */}
+                    <a className="footer-logo-link in-logo" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
+                    <span class="fa-stack">
+                        <i class="fa-stack-1x fa fa-square"></i>
+                        <i class="fa-stack-1x fab fa-linkedin footer-logo"></i>
+                    </span>
                     </a>
                 
-                </div>
                 </div>
             </MediaQuery>
             <MediaQuery minDeviceWidth={601}>
@@ -37,16 +45,15 @@ class Footer extends Component {
                             <div style={{paddingRight: "2vw"}}>
                                 <a href="mailto: djg81999@gmail.com" className="footer-logo-link">
                                 <span class="fa-stack">
-                                    <i class="fa-stack-1x fa fa-square footer-logo"></i>
+                                    <i class="fa-stack-1x fa fa-square"></i>
                                     <i class="fa-stack-1x fas fa-envelope-square footer-logo"></i>
                                 </span>
-                                    {/* <i className="fas fa-envelope-square footer-logo"></i> */}
                                 </a>
                             </div>
                             <div>
                                 <a className="footer-logo-link" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
                                 <span class="fa-stack">
-                                    <i class="fa-stack-1x fa fa-square footer-logo"></i>
+                                    <i class="fa-stack-1x fa fa-square"></i>
                                     <i class="fa-stack-1x fab fa-linkedin footer-logo"></i>
                                 </span>
                                 </a>
