@@ -33,13 +33,17 @@ class Footer extends Component {
                         <h6 className="footer-text">Made with ReactJS, HTML, CSS, Bootstrap 4, ScreenToGif, and FontAwesome.</h6>
                     </div>
                     <div style={{width: "33vw", position: "absolute", left: "71.5vw", marginRight: "0.5vw"}}>
-                        <div className="row" style={{width: "13vw", position: "relative", left: "20%"}}>
+                        <div className="row" style={{width: "13vw", position: "relative", left: "20%", padding: "1vw"}}>
                             <div style={{paddingRight: "2vw"}}>
                                 <a href="mailto: djg81999@gmail.com" className="footer-logo-link">
-                                    <i className="fas fa-envelope-square footer-logo"></i>
+                                <span class="fa-stack">
+                                    <i class="fa-stack-1x fa fa-square footer-logo"></i>
+                                    <i class="fa-stack-1x fas fa-envelope-square footer-logo"></i>
+                                </span>
+                                    {/* <i className="fas fa-envelope-square footer-logo"></i> */}
                                 </a>
                             </div>
-                            <div style={{paddingTop: "1vw"}}>
+                            <div>
                                 <a className="footer-logo-link" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
                                 <span class="fa-stack">
                                     <i class="fa-stack-1x fa fa-square footer-logo"></i>

@@ -203,6 +203,10 @@ footer{
   color: rgb(14,118,168) !important;
 }
 
+.fa-envelope-square{
+  color: #147efb;
+}
+
 .fa-square{
   font-size: 3.6vw !important;
   padding: 0.1vw !important;
