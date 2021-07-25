@@ -7,7 +7,63 @@ class Footer extends Component {
     render() { 
         return (
             <footer>
-            <MediaQuery maxDeviceWidth={600}>
+                {/* Most mobile widths */}
+                <MediaQuery maxDeviceWidth={480}>
+                <div className="foot-flex cent">
+                    <div className="flex-row foot-row-icon">
+                        <a href="mailto: djg81999@gmail.com" className="foot-logo-link">
+                            <span class="fa-stack">
+                                <i class="fa-stack-1x fa fa-square"></i>
+                                <i class="fa-stack-1x fas fa-envelope-square foot-logo"></i>
+                            </span>
+                        </a>
+                        <a className="foot-logo-link" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
+                            <span class="fa-stack">
+                                <i class="fa-stack-1x fa fa-square"></i>
+                                <i class="fa-stack-1x fab fa-linkedin foot-logo"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div className="foot-row-text">
+                        <p className="foot-text">Last updated: 7/25/2021</p>
+                    </div>
+                    <div className="foot-row-text">
+                        <p className="foot-text">Made with ReactJS, HTML, CSS, ScreenToGif, and FontAwesome.</p>
+                    </div>
+                    <div>
+                    </div>
+                </div> 
+                </MediaQuery>
+
+                {/* Low resolution tablets */}
+                <MediaQuery minDeviceWidth={481}>
+                <div className="foot-flex cent">
+                    <div>
+                        <p className="foot-text">Last updated: 7/25/2021</p>
+                    </div>
+                    <div>
+                        <p className="foot-text">Made with ReactJS, HTML, CSS, ScreenToGif, and FontAwesome.</p>
+                    </div>
+                    <div>
+                    <div className="flex-row cent">
+                        <a href="mailto: djg81999@gmail.com" className="foot-logo-link">
+                            <span class="fa-stack">
+                                <i class="fa-stack-1x fa fa-square"></i>
+                                <i class="fa-stack-1x fas fa-envelope-square foot-logo"></i>
+                            </span>
+                        </a>
+                        <a className="foot-logo-link" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
+                            <span class="fa-stack">
+                                <i class="fa-stack-1x fa fa-square"></i>
+                                <i class="fa-stack-1x fab fa-linkedin foot-logo"></i>
+                            </span>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                </MediaQuery>
+                
+            {/* <MediaQuery maxDeviceWidth={600}>
                 <h4 className="footer-text" style={{textAlign: "center"}}>Last Updated: 7/18/2021</h4>
                 <div className="row" style={{width: "80vw", marginLeft: "10vw", textAlign: "center"}}>
                     <h6 className="footer-text">Made with ReactJS, HTML, CSS, Bootstrap 4, ScreenToGif, and FontAwesome.</h6>
@@ -21,7 +77,6 @@ class Footer extends Component {
                         <i class="fa-stack-1x fas fa-envelope-square footer-logo"></i>
                     </span>
                     </a>
-                    {/* <a style={{position: "absolute", left: "66vw", bottom: "2vh"}}className="footer-logo-link in-logo" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/"> */}
                     <a className="footer-logo-link in-logo" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
                     <span class="fa-stack">
                         <i class="fa-stack-1x fa fa-square"></i>
@@ -32,7 +87,6 @@ class Footer extends Component {
                 </div>
             </MediaQuery>
             <MediaQuery minDeviceWidth={601}>
-                {/* <p>You are a desktop or laptop</p> */}
                 <div className="row">
                     <div style={{marginLeft: "0.5vw", paddingTop: "1vh", width: "33vw", textAlign: "center"}}>
                         <h4 className="footer-text">Last updated: 7/18/2021</h4>
@@ -61,7 +115,7 @@ class Footer extends Component {
                         </div>
                     </div>
                 </div>
-            </MediaQuery>
+            </MediaQuery> */}
             </footer>
           );
     }

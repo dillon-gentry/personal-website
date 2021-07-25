@@ -14,23 +14,21 @@ class Resume extends Component {
 
         return (
             <React.Fragment>
-                    <div className="page-div" id="page">
                         <h1 className="page-title">Resume</h1>
                         <div className="resume-div" id="content">
                             <Document file={this.state.file}>
-                                <MediaQuery minDeviceWidth={150} maxDeviceWidth={600}>
+                                <MediaQuery maxDeviceWidth={480}>
                                     <Page pageNumber={this.state.pageNumber} width={1200} scale={0.5}/>
                                 </MediaQuery>
-                                <MediaQuery minDeviceWidth={601} maxDeviceWidth={2400}>
+                                <MediaQuery minDeviceWidth={481} maxDeviceWidth={1200}>
                                     <Page pageNumber={this.state.pageNumber} width={2000} scale={0.5}/>
                                 </MediaQuery>
-                                <MediaQuery minDeviceWidth={2401}>
+                                <MediaQuery minDeviceWidth={1201}>
                                     <Page pageNumber={this.state.pageNumber} width={3000} scale={0.5}/>
                                 </MediaQuery>
                             </Document>
                             <p style={{color: "white"}}>Page {this.state.pageNumber} of {this.state.numPages}</p>
                         </div>
-                    </div>
             </React.Fragment>
           );
     }
