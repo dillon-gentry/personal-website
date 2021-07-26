@@ -55,28 +55,30 @@ class NavBar extends Component {
       const navType = this.state.navType;
         return (
           <React.Fragment>
-            {/* <MediaQuery maxDeviceWidth={480}> */}
+
+            {/* Touchscreen navbar (mobile and tablets) */}
+            <MediaQuery maxDeviceWidth={1024}>
             <div className="nav-bg">
               <div style={this.navMobContStyle}>
                 <div className={"nav-mobile-flex-" + navType}>
-                  <div class="flex-test">
+                  <div class="flex-item-mobile">
                     <a onClick={ () => this.toggleNavMobile() }>
-                      <i class="fas fa-bars nav-icon"></i>
+                      <i class="fas fa-bars nav-mobile-icon"></i>
                     </a>
                   </div>
-                  <div class="flex-test">
+                  <div class="flex-item-mobile">
                   <a href="/" className={"nav-mobile-link-a-" + navbarStatus}>
-                    <i className="fas fa-home nav-icon"></i>
+                    <i className="fas fa-home nav-mobile-icon"></i>
                   </a>
                   </div>
-                  <div class="flex-test">
+                  <div class="flex-item-mobile">
                   <a href="/projects" className={"nav-mobile-link-a-" + navbarStatus}>
-                    <i class="fas fa-laptop-code nav-icon"></i>
+                    <i class="fas fa-laptop-code nav-mobile-icon"></i>
                   </a>
                   </div>
-                  <div class="flex-test">
+                  <div class="flex-item-mobile">
                   <a href="/resume" className={"nav-mobile-link-a-" + navbarStatus}>
-                    <i class="fas fa-file-alt nav-icon"></i>
+                    <i class="fas fa-file-alt nav-mobile-icon"></i>
                   </a>
                   </div>
                 </div>
@@ -102,79 +104,57 @@ class NavBar extends Component {
                 </div>
               </div>
             </div>
-            {/* <div className="nav-mobile-open"> */}
-            {/* <div className="flex-col">
-              <a onClick={ () => this.toggleNavMobile() }>
-                <i class="fas fa-bars nav-icon"></i>
-              </a>
-              <a href="/">
-                <i className="fas fa-home nav-icon-open"></i>
-              </a>
-              <a href="/projects">
-                <i class="fas fa-laptop-code nav-icon-open"></i>
-              </a>
-              <a className={"link-"+navbarStatus} href="/resume">
-                <i class="fas fa-file-alt nav-icon-open"></i>
-              </a>
-            </div> */}
-            {/* <div className="flex-row">
-              
-            </div>
-            <div className="flex-row">
-              
-          </div> */}
-            {/* </div> */}
-            {/* <div className={"flex-col nav-mobile-" + navbarStatus}>
-              <a onClick={ () => this.toggleNavMobile() }>
-                <i class="fas fa-bars nav-icon"></i>
-              </a>
-              <div className="flex-row">
-                <a className="nav-content" href="/">
-                <i className="fas fa-home fa"></i> Home</a>
-              </div>
-              <div className="flex-row">
-                <a className="nav-content" href="/projects">
-                <i class="fas fa-laptop-code"></i> Projects</a>
-              </div>
-              <div className="flex-row">
-                <a className="nav-content" href="/resume">
-                <i class="fas fa-file-alt"></i> Resume</a>
-              </div>
-            </div> 
-            <div className={"nav-mobile-blur-" + navbarStatus}>
-            </div> */}
-
-
-            {/* </MediaQuery>
-
-            <MediaQuery minDeviceWidth={481}> */}
-
-
-              {/* <div>
-                <div id="navBar" className={"nav-"+navbarStatus}>
-                  <div style={{marginTop: "40vh"}}>
-                  <div style={{marginBottom: "2vh"}}>
-                  <a className="nav-content" href="/">
-                  <i className="fas fa-home fa"></i> Home</a>
+            </MediaQuery>
+            <MediaQuery minDeviceWidth={1025}>
+            <div className="nav-bg">
+              <div style={this.navMobContStyle}>
+                <div className={"nav-flex-" + navType}>
+                  <div className="flex-item-toggle">
+                    <a onClick={ () => this.toggleNavMobile() }>
+                      <i class="fas fa-bars nav-icon"></i>
+                    </a>
                   </div>
-                  <div style={{marginBottom: "2vh"}}>
-                  <a className="nav-content" href="/projects">
-                  <i class="fas fa-laptop-code"></i> Projects</a>
+                  <div className={"flex-item-" + navType}>
+                    <a href="/" className={"nav-mobile-link-a-" + navbarStatus}>
+                      <div className="flexxy">
+                        <div className={"icon-div-" + navType}>
+                          <i className="fas fa-home nav-icon"></i>
+                        </div>
+                        <div className={"tex-div-" + navType}>
+                          <p className={"nav-link tex-" + navbarStatus}>Home</p>
+                        </div>
+                      </div>
+                    </a>
                   </div>
-                  <div style={{marginBottom: "2vh"}}>
-                  <a className="nav-content" href="/resume">
-                  <i class="fas fa-file-alt"></i> Resume</a>
+                  <div className={"flex-item-" + navType}>
+                    <a href="/projects" className={"nav-mobile-link-a-" + navbarStatus}>
+                      <div className="flexxy">
+                        <div className={"icon-div-" + navType}>
+                        <i class="fas fa-laptop-code nav-icon"></i>
+                        </div>
+                        <div className={"tex-div-" + navType}>
+                          <p className={"nav-link tex-" + navbarStatus}>Projects</p>
+                        </div>
+                      </div>
+                    </a>
                   </div>
+                  <div className={"flex-item-" + navType}>
+                    <a href="/resume" className={"nav-mobile-link-a-" + navbarStatus}>
+                      <div className="flexxy">
+                        <div className={"icon-div-" + navType}>
+                        <i class="fas fa-file-alt nav-icon"></i>
+                        </div>
+                        <div className={"tex-div-" + navType}>
+                          <p className={"nav-link tex-" + navbarStatus}>Resume</p>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
-          
-              <div className={"toggle-div-" + navbarStatus}>
-                <a onClick={ () => this.toggleNav() }>
-                  <i className={ chevronClass + " toggle-" + this.state.chevron} ></i>
-                </a>
-              </div> */}
-            {/* </MediaQuery> */}
+            </div>
+            </MediaQuery>
+
           </React.Fragment>
         );
     }
