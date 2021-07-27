@@ -8,7 +8,7 @@ class Projects extends Component {
             <React.Fragment>
                 <h1 className="page-title">Projects</h1>
                 <MediaQuery maxDeviceWidth={480}>
-                    <div className="flex-all-proj-col">
+                    <div className="flex-mobile-all-proj-col">
                         <div className="flex-proj-col">
                             <h4>Golf Guru IDB</h4>
                             <h6>Tools</h6>
