@@ -357,7 +357,7 @@ body, #root, .page{
   justify-content: center;
 }
 
-.flex-proj-col{
+.flex-proj-mobile{
   margin: 1rem;
   padding: 1rem;
   width: 80%;
@@ -365,10 +365,10 @@ body, #root, .page{
   text-align: center;
 }
 
-.flex-proj-row{
+.flex-proj{
   margin: 1rem;
   padding: 1rem;
-  width: 33%;
+  width: 60%;
   background-color: white;
   text-align: center;
 }

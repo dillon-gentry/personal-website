@@ -26,7 +26,7 @@ class Footer extends Component {
                     </div>
                     <div className="foot-flex-col-text-col">
                         <p className="foot-text">Last updated: 7/26/2021</p>
-                        <p className="foot-text">Made with ReactJS, HTML, CSS, ScreenToGif, and FontAwesome.</p>
+                        <p className="foot-text">Made with ReactJS, React-PDF, HTML, CSS, ScreenToGif, and FontAwesome.</p>
                     </div>
                     <div>
                     </div>
@@ -45,8 +45,8 @@ class Footer extends Component {
                             </a>
                         </div>
                         <div className="foot-flex-row-text-row">
-                            <p className="foot-text">Last updated: 7/25/2021</p>
-                            <p className="foot-text">Made with ReactJS, HTML, CSS, ScreenToGif, and FontAwesome.</p>
+                            <p className="foot-text">Last updated: 7/26/2021</p>
+                            <p className="foot-text">Made with ReactJS, React-PDF, HTML, CSS, ScreenToGif, and FontAwesome.</p>
                         </div>
                         <div className="foot-flex-row-icon-row">
                             <a className="foot-logo-link" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
