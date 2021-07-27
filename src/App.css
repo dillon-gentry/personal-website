@@ -112,9 +112,38 @@ body, #root, .page{
 
 /* Footer CSS (New) */
 
-.foot-flex{
+.foot-flex-col{
   display: flex;
   flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot-flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.foot-flex-icon-row{
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot-flex-text-row{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+}
+
+.foot-flex-text-col{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
 }
 
 .flex-col{
@@ -146,11 +175,6 @@ footer{
   height: 4rem;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
-}
-
-.foot-row-text{
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
 }
 
 .foot-logo-link{
