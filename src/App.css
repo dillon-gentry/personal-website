@@ -13,6 +13,27 @@
   }
 }
 
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -468,224 +489,6 @@ footer{
   font-size: 4rem;
 }
 
-
- /* For mobile */
- /* @media screen and (max-width: 600px){
-  
-  .nav-open{
-    width: 30vw;
-  }
-
-  .nav-content{
-    margin-left: 6vw;
-    margin-bottom: 3vh;
-    font-size: 4vw;
-    padding: 1px;
-  }
-
-  .toggle-div-close{
-    width: 5vw;
-  }
-
-  .toggle-div-open{
-    width: 5vw;
-    margin-left: 30vw;
-  }
-
-  .toggle-left{
-    padding-left: 1.5vw;
-  }
-
-  .toggle-right{
-    padding-left: 1.5vw;
-  }
-
-  .page-title{
-    font-size: 8vw;
-    font-weight: bold;
-    color: white;
-    text-shadow: 0 0 0.5vw black;
-  }
-
-  .rounded-circle{
-    width: 40vw !important;
-  }
-  
-  .splash-text{
-    font-size: 6vw;
-    text-align: center;
-  }
-
-  .resume-div{
-    color:white;
-    position: absolute;
-    top: 5vh;
-    left: 10vw;
-    height: 80vh;
-    width: 80vw;
-  }
-
-  .card-deck{
-    position: absolute !important;
-    left: 16vw !important;
-  }
-
-  .card{
-    width: 68vw !important;
-    padding: 3vw !important;
-  }
-
-  .card-title{
-    font-size: 3vw !important;
-  }
-
-  .card-text{
-    font-size: 2.5vw !important;
-  }
-
-  .btn{
-    font-size: 2.5vw !important;
-  } */
-  
-  /* .footer-text{
-     color: white;
-     font-size: 3vw;
-   } */
-
-   /* .footer-logo{
-    font-size: 10vw;
-   } */
-
-   /* .fa-square{
-     font-size: 9.6vw !important;
-   } */
-
-   /* footer{
-    position: absolute;
-    left: 0vw;
-    bottom: 0;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-    width: 100vw;
-    background: transparent;
-   }
- } */
-
-/* For 32" 720p Roku tv */
-/* @media screen and (min-width: 1200px) and (max-width: 1600px){
-  .nav-content{
-    font-size: 2.5vw;
-  }
-
-  .splash-text{
-    font-size: 2.5vw;
-  }
-
-  .rounded-circle{
-    width: 15vw !important;
-  }
-
-  .card{
-    height: 28vh !important;
-  } */
-
-  /* .footer-text{
-    /* for debugging 
-    /* color: red; 
-    font-size: 1.5vw;
-  } */
-
-
-/* } */
-
-/* For 27" 1080p Samsung monitor */
-/* @media screen and (min-width: 1601px) and (max-width: 2000px){
-  .nav-content{
-    font-size: 2.5vw;
-  }
-
-  .resume-div{
-    left: 25vw;
-    height: 75vh;
-    width: 50vw;
-  } */
-
-  /* .card{
-    height: 25vh !important;
-  } */
-  
-  /* .footer-text{
-    /* for debugging
-    /* color: blue; 
-    font-size: 1vw;
-  } */
-/* } */
-
-/* For 24" 1440p Dell monitor and anything larger in pixel width */
-  /* @media screen and (min-width: 2001px){
-  .nav-content{
-    font-size: 2.5vw;
-  }
-  
-  .resume-div{
-    left: 27vw;
-    height: 75vh;
-    width: 46vw;
-  }
-
-  .card{
-    height: 25vh !important;
-  } */
-
-  /* .footer-text{
-    /* for debugging */
-    /* color: green; 
-    font-size: 1vw;
-  } */
-/* } */
-
-/* Popup container */
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-/* The actual popup (appears on top) */
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
-}
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 ::-webkit-scrollbar {
   display: none;
@@ -695,25 +498,4 @@ footer{
 .example {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
