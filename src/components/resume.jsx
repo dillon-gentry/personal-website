@@ -16,6 +16,16 @@ class Resume extends Component {
             <React.Fragment>
                         <h1 className="page-title">Resume</h1>
                         <div className="resume-div" id="content">
+                        <MediaQuery maxDeviceWidth={480}>
+                        <div style={{backgroundColor: "white"}}>
+                            <h4 style={{textAlign: "center"}}>Having trouble viewing in mobile? Turn sideways for a better view. (Changes will be made to this page soon).</h4>
+                        </div>
+                        </MediaQuery>
+                        {/* <MediaQuery minDeviceWidth={481} maxDeviceWidth={1200}>
+                            <div style={{backgroundColor: "white"}}>
+                            <h4 style={{textAlign: "center"}}>Having trouble viewing in portrait mode on your tablet? Turn sideways for a better view. (Changes will be made to this page soon).</h4>
+                            </div>
+                        </MediaQuery> */}
                             <Document file={this.state.file}>
                                 <MediaQuery maxDeviceWidth={480}>
                                     <Page pageNumber={this.state.pageNumber} width={1200} scale={0.5}/>
