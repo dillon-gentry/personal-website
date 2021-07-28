@@ -72,8 +72,21 @@
 
 html{
   font-size: 16px;
-  /* height: 100%; */
-  height: -webkit-fill-available;
+  height: 100%;
+  /* height: -webkit-fill-available; */
+}
+
+/* Using postcss-100vh-fix accredited from https://github.com/postcss/postcss-100vh-fix/blob/master/README.md */
+body{
+  height: 100vh;
+}
+
+/* Using postcss-100vh-fix accredited from https://github.com/postcss/postcss-100vh-fix/blob/master/README.md */
+@supports (-webkit-touch-callout: none){
+  body{
+    /* Safari fix */
+    height: -webkit-fill-available;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -320,11 +333,8 @@ p{
 
 /* Splash Page CSS */
 
-body, #root, .page{
-  /* height: 100%; */
-  /* mobile viewport bug fix accredited from https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/ */
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+#root, .page{
+  height: 100%;
 }
 
 .page{
