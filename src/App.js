@@ -10,6 +10,7 @@ import { Route, Switch } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import MediaQuery from 'react-responsive';
+import Div100vh from 'react-div-100vh';
 
 class App extends Component{
 
@@ -24,20 +25,22 @@ class App extends Component{
   render(){ 
     return(
     <React.Fragment>
-      <div className="page" style={this.bgStyle}>
-        <Navbar/>
-        <div className="content">
-          <Switch>
-            <Route path="/projects/auction-house" component={AuctionProj}/>
-            <Route path="/projects/nokia-tsf" component={NokiaProj}/>
-            <Route path="/projects/golf-guru" component={GolfProj}/>
-            <Route path="/projects" component={Projects}/>
-            <Route path="/resume" component={Resume}/>
-            <Route path="/" component={Splash}/>
-          </Switch>
+      <Div100vh>
+        <div className="page" style={this.bgStyle}>
+          <Navbar/>
+          <div className="content">
+            <Switch>
+              <Route path="/projects/auction-house" component={AuctionProj}/>
+              <Route path="/projects/nokia-tsf" component={NokiaProj}/>
+              <Route path="/projects/golf-guru" component={GolfProj}/>
+              <Route path="/projects" component={Projects}/>
+              <Route path="/resume" component={Resume}/>
+              <Route path="/" component={Splash}/>
+            </Switch>
+          </div>
+          <Footer/>
         </div>
-        <Footer/>
-      </div>
+      </Div100vh>
     </React.Fragment>
     );
     }
