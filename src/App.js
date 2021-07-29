@@ -16,7 +16,7 @@ class App extends Component{
 
   bgStyle = {
     backgroundImage: "url('/img/splash_bg.png')",
-    backgroundSize: "cover",
+    // backgroundSize: "cover",
     overflow: "scroll",
     width: "100vw",
     height: "100vh"
