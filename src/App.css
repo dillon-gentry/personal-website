@@ -92,6 +92,8 @@ html{
 
 body, #root, .page{
   height: 100%;
+  overflow-y: scroll !important;
+  -webkit-overflow-scrolling: touch !important;
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
