@@ -15,7 +15,7 @@ import Div100vh from 'react-div-100vh';
 class App extends Component{
 
   bgStyle = {
-    backgroundImage: "url('/img/splash_bg.png')",
+    // backgroundImage: "url('/img/splash_bg.png')",
     // backgroundSize: "cover",
     overflow: "scroll",
     width: "100vw",
