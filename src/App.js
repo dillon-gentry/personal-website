@@ -25,7 +25,6 @@ class App extends Component{
   render(){ 
     return(
     <React.Fragment>
-      <Div100vh>
         <div className="page" style={this.bgStyle}>
           <Navbar/>
           <div className="content">
@@ -40,7 +39,6 @@ class App extends Component{
           </div>
           <Footer/>
         </div>
-      </Div100vh>
     </React.Fragment>
     );
     }
