@@ -8,9 +8,9 @@ class Projects extends Component {
             <React.Fragment>
                 <h1 className="page-title">Projects</h1>
 
-                <div style={{backgroundColor: "white"}}>
+                {/* <div style={{backgroundColor: "white"}}>
                     <h4 style={{textAlign: "center"}}>Note: Recorded GIFs (courtesy of ScreenToGif) of project demos will soon be available on project pages!</h4>
-                </div>
+                </div> */}
                 <MediaQuery maxDeviceWidth={480}>
                     <div className="flex-all-proj-col">
                         <div className="flex-proj-mobile">

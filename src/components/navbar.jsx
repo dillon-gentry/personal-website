@@ -91,7 +91,7 @@ class NavBar extends Component {
                 <MediaQuery minDeviceWidth={1025}>
                     <div className={"nav-flex-" + navType}>
                       <div className="nav-flex-item-toggle">
-                        <a onClick={ () => this.toggleNav() }>
+                        <a className="nav-toggle-link" onClick={ () => this.toggleNav() }>
                           <i class="fas fa-bars nav-icon"></i>
                         </a>
                       </div>

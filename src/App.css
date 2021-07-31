@@ -239,6 +239,10 @@ p{
   justify-content: center;
 }
 
+.nav-toggle-link:hover{
+  cursor: pointer;
+}
+
 .nav-link{
   color: white;
   font-size: 2rem;
@@ -477,6 +481,11 @@ footer{
   width: 50%;
 }
 
+.proj-gif{
+  width: 95%;
+  height: 90%;
+}
+
 .foot-text{
   color: white;
   font-size: 1rem;
@@ -486,8 +495,6 @@ footer{
 .foot-logo-link{
   text-decoration: none;
   color: white; 
-  vertical-align: bottom;
-  width: 100%;
 }
 
 .fa-linkedin{
