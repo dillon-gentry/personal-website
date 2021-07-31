@@ -458,6 +458,26 @@ footer{
   height: 4rem;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot-flex-col-icon-row-item{
+  display: flex;
+  width: 50%;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-stack{
+  width: 50% !important;
+}
+
+@media screen and (min-width: 1025px) {
+  .fa-stack{
+    width: 30% !important;
+  } 
 }
 
 .foot-flex-row-icon-row{
@@ -494,7 +514,7 @@ footer{
 
 .foot-logo-link{
   text-decoration: none;
-  color: white; 
+  color: white;
 }
 
 .fa-linkedin{
@@ -508,10 +528,6 @@ footer{
 .fa-square{
   font-size: 3.4rem;
   padding-left: 0.1em;
-}
-
-.fa-stack{
-  width: 100%;
 }
 
 .foot-logo{
