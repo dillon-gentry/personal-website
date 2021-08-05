@@ -11,21 +11,23 @@ class Footer extends Component {
                 <MediaQuery maxDeviceWidth={480}>
                 <div className="foot-flex-col">
                     <div className="foot-flex-col-icon-row">
-                        <a href="mailto: djg81999@gmail.com" className="foot-logo-link">
+                        <div className="foot-flex-col-icon-row-item">
                             <span class="fa-stack">
-                                <i class="fa-stack-1x fa fa-square"></i>
-                                <i class="fa-stack-1x fas fa-envelope-square foot-logo"></i>
+                                <a href="mailto: djg81999@gmail.com" className="foot-logo-link">
+                                    <i class="fa-stack-1x fa fa-square"></i>
+                                    <i class="fa-stack-1x fas fa-envelope-square foot-logo"></i>
+                                </a>
                             </span>
-                        </a>
-                        <a className="foot-logo-link" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
                             <span class="fa-stack">
-                                <i class="fa-stack-1x fa fa-square"></i>
-                                <i class="fa-stack-1x fab fa-linkedin foot-logo"></i>
+                                <a className="foot-logo-link" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
+                                    <i class="fa-stack-1x fa fa-square"></i>
+                                    <i class="fa-stack-1x fab fa-linkedin foot-logo"></i>
+                                </a>
                             </span>
-                        </a>
+                        </div>
                     </div>
                     <div className="foot-flex-col-text-col">
-                        <p className="foot-text">Last updated: 7/26/2021</p>
+                        <p className="foot-text">Last updated: 7/31/2021</p>
                         <p className="foot-text">Made with ReactJS, React-PDF, HTML, CSS, ScreenToGif, and FontAwesome.</p>
                     </div>
                     <div>
@@ -37,24 +39,24 @@ class Footer extends Component {
                 <MediaQuery minDeviceWidth={481}>
                     <div className="foot-flex-row">
                         <div className="foot-flex-row-icon-row">
-                            <a href="mailto: djg81999@gmail.com" className="foot-logo-link">
-                                <span class="fa-stack">
+                            <span class="fa-stack">
+                                <a href="mailto: djg81999@gmail.com" className="foot-logo-link">
                                     <i class="fa-stack-1x fa fa-square"></i>
                                     <i class="fa-stack-1x fas fa-envelope-square foot-logo"></i>
-                                </span>
-                            </a>
+                                </a>
+                            </span>
                         </div>
                         <div className="foot-flex-row-text-row">
-                            <p className="foot-text">Last updated: 7/26/2021</p>
+                            <p className="foot-text">Last updated: 7/31/2021</p>
                             <p className="foot-text">Made with ReactJS, React-PDF, HTML, CSS, ScreenToGif, and FontAwesome.</p>
                         </div>
                         <div className="foot-flex-row-icon-row">
-                            <a className="foot-logo-link" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
-                                <span class="fa-stack">
+                            <span class="fa-stack">
+                                <a className="foot-logo-link" href="https://www.linkedin.com/in/dillon-gentry-768b411a0/">
                                     <i class="fa-stack-1x fa fa-square"></i>
                                     <i class="fa-stack-1x fab fa-linkedin foot-logo"></i>
-                                </span>
-                            </a>
+                                </a>
+                            </span>
                         </div>
                     </div>
                 </MediaQuery>

@@ -18,6 +18,10 @@ class GolfProj extends Component{
                 {/* <MediaQuery maxDeviceWidth={480}> */}
                     <div className="flex-all-proj-col">
                         <div className="flex-proj-mobile">
+                            <h4>Demo</h4>
+                            <img className="proj-gif" src="/gif/golf_demo.gif" alt="loading..."></img>
+                        </div>
+                        <div className="flex-proj-mobile">
                             <h4>Link</h4>
                             <p>Click below for the finalized version of the website.</p>
                             <a href="http://golf-idb.uc.r.appspot.com">Go</a>
