@@ -10,10 +10,15 @@ import { Route, Switch } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import MediaQuery from 'react-responsive';
+import { useScreenWidth } from './hooks/useScreenWidth';
 
-class App extends Component{
 
-  bgStyle = {
+
+function App(){
+
+  const width = useScreenWidth().width;
+
+  const bgStyle = {
     backgroundImage: "url('/img/splash_bg.png')",
     backgroundSize: "cover",
     overflow: "scroll",
@@ -21,10 +26,9 @@ class App extends Component{
     height: "100vh"
   }
 
-  render(){ 
     return(
     <React.Fragment>
-        <div className="page" style={this.bgStyle}>
+        <div className="page" style={bgStyle}>
           <Navbar/>
           <div className="content">
             <Switch>
@@ -32,7 +36,8 @@ class App extends Component{
               <Route path="/projects/nokia-tsf" component={NokiaProj}/>
               <Route path="/projects/golf-guru" component={GolfProj}/>
               <Route path="/projects" component={Projects}/>
-              <Route path="/resume" component={Resume}/>
+              <Route path="/resume" render={routeProps => (
+                <Resume vWidth={ width }/>)}/>
               <Route path="/" component={Splash}/>
             </Switch>
           </div>
@@ -40,7 +45,6 @@ class App extends Component{
         </div>
     </React.Fragment>
     );
-    }
 }
 
 export default App;
