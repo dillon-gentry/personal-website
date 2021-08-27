@@ -9,7 +9,7 @@ class Resume extends Component {
     state = {
         numPages: 1,
         pageNumber: 1,
-        file: "/Resume_SP21.pdf"
+        file: "/Resume_Aug2021.pdf"
     }
 
     render() {
