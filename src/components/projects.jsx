@@ -60,7 +60,7 @@ class Projects extends Component {
                         <div className="flex-proj">
                             <h4>Auction House</h4>
                             <h6>Tools</h6>
-                            <p className="card-text">Java, JavaFx, Observable interface</p>
+                            <p className="card-text">Java, JavaFx</p>
                             <a href="/projects/auction-house">
                                 <button>Learn More</button>
                             </a>
