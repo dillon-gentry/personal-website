@@ -39,12 +39,6 @@ class GolfProj extends Component{
                     </div>
                 {/* </MediaQuery> */}
 
-                {/* <MediaQuery minDeviceWidth={481}> */}
-                            {/* {/* <div style={{position: "absolute", left: "29vw", width: "42vw", height: "47vh", top: "12vh"}}>
-                                <img src="/gif/golf_demo.gif" alt="loading..." style={{marginLeft: "1vw", width: "40vw"}}></img>
-                            </div> */}
-                {/* </MediaQuery> */}
-
             </React.Fragment>
         );
     }

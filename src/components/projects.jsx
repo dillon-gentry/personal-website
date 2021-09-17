@@ -32,7 +32,7 @@ class Projects extends Component {
                         <div className="flex-proj-mobile">
                             <h4>Auction House</h4>
                             <h6>Tools</h6>
-                            <p>Java, JavaFx, Observable interface</p>
+                            <p>Java, JavaFx</p>
                             <a href="/projects/auction-house">
                                 <button>Learn More</button>
                             </a>

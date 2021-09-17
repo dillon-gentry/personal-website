@@ -31,7 +31,7 @@ class Footer extends Component {
               </div>
             </div>
             <div className="foot-flex-col-text-col">
-              <p className="foot-text">Last updated: 8/27/2021</p>
+              <p className="foot-text">Last updated: 9/16/2021</p>
               <p className="foot-text">
                 Made with ReactJS, React-PDF, HTML, CSS, ScreenToGif, and
                 FontAwesome.
@@ -58,7 +58,7 @@ class Footer extends Component {
               </span>
             </div>
             <div className="foot-flex-row-text-row">
-              <p className="foot-text">Last updated: 8/27/2021</p>
+              <p className="foot-text">Last updated: 9/16/2021</p>
               <p className="foot-text">
                 Made with ReactJS, React-PDF, HTML, CSS, ScreenToGif, and
                 FontAwesome.
