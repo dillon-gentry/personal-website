@@ -15,7 +15,7 @@ class Splash extends Component {
             ></img>
 
             <h1 className="splash-text">Hi, my name is Dillon Gentry.</h1>
-            <h2 className="splash-text"> I am an aspiring software engineer.</h2>
+            <h2 className="splash-text"> I am a software engineer.</h2>
           </React.Fragment>
         );
     }
